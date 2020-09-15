@@ -1,6 +1,6 @@
 ---
 title: "CEPRA-RES - Encuesta escuelas CUENCA e IBARRA"
-author: "Universidas de Cuenca, Universidad del Azuay, Pontificia Universidad CatÃ³lica del Ecuador Sede Ibarra"
+author: "Universidas de Cuenca, Universidad del Azuay, Pontificia Universidad Católica del Ecuador Sede Ibarra"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -17,7 +17,7 @@ output:
 
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE,cache=TRUE,
-               cache.path = 'Encuentas_Marzo2020/CUENCA/')
+               cache.path = '.')
 ```
 
 ```{r knitr_init}
@@ -28,7 +28,7 @@ suppressMessages(library(knitr))
 options(max.print="75")
 opts_chunk$set(echo=FALSE,
 	             cache=TRUE,
-               cache.path = 'Encuentas_Marzo2020/CUENCA/',
+               cache.path = '.',
                prompt=FALSE,
                tidy=TRUE,
                comment=NA,
@@ -42,14 +42,14 @@ opts_knit$set(width=75)
 
 **Proyecto**
 
-EvaluaciÃ³n de entornos urbanos peatonales para la identificaciÃ³n de rutas escolares seguras en ciudades intermedias del Ecuador, 2020.</br>
+Evaluación de entornos urbanos peatonales para la identificación de rutas escolares seguras en ciudades intermedias del Ecuador, 2020.</br>
 
 **Financiadores**
 
-CorporaciÃ³n Ecuatoriana para el Desarrollo de la InvestigaciÃ³n y la Academia (CEDIA) </br>
+Corporación Ecuatoriana para el Desarrollo de la Investigación y la Academia (CEDIA) </br>
 Universidad de Cuenca </br>
 Universidad del Azuay </br>
-Pontificia Universidad CatÃ³lica del Ecuador Sede Ibarra</br>
+Pontificia Universidad Católica del Ecuador Sede Ibarra</br>
 
 **Investigadores**
 
@@ -57,30 +57,30 @@ Universidad de Cuenca</br>
 Daniel Augusto Orellana Vintimilla `daniel.orellana@ucuenca.edu.ec`</br>
 Adriana Eulalia Quezada Larriva `adriana.quezada@ucuenca.edu.ec`</br>
 Andrea Daniela Cobo Torres  `daniela.cobot@ucuenca.edu.ec`</br>
-Javier AndrÃ©s GarcÃ­a Galarza  `jgarcia@ubicacuenca.com` </br>
-Joseline Gabriela CarriÃ³n Astudillo `gabriela.carrion@ucuenca.edu.ec`</br>
-Camila Mariana PÃ©rez Calle  `camila.perez@ucuenca.edu.ec`</br></br>
+Javier Andrés García Galarza  `jgarcia@ubicacuenca.com` </br>
+Joseline Gabriela Carrión Astudillo `gabriela.carrion@ucuenca.edu.ec`</br>
+Camila Mariana Pérez Calle  `camila.perez@ucuenca.edu.ec`</br></br>
 
 Universidad del Azuay</br>
 Carla Marcela Hermida Palacios  `chermida@uazuay.edu.ec`</br>
 Daniela Elisabet Ballari `dballari@uazuay.edu.ec`</br>
 Gabriela Lituma `mlitumapau@es.uazuay.edu.ec` </br>
-Jaime AndrÃ©s PeÃ±a Rosas `jmepr@es.uazuay.edu.ec`</br>
+Jaime Andrés Peña Rosas `jmepr@es.uazuay.edu.ec`</br>
 Francisco David Salgado Castillo  `fdsalgado@uazuay.edu.ec`</br></br>
 
-Pontificia Universidad CatÃ³lica del Ecuador Sede Ibarra</br>
+Pontificia Universidad Católica del Ecuador Sede Ibarra</br>
 
-Jorge Javier Andrade BenÃ­tez  `jjandrade@pucesi.edu.ec`</br>
-MÃ³nica Gabriela Naranjo Serrano  `mgnaranjo@puce.edu.ec`</br>
-MarÃ­a JosÃ© Valdospinos Carvajal `mariajosevaldospinos@gmail.com` </br>
-Iveth Alejandra Ortega PÃ©rez;  Pontificia Universidad CatÃ³lica del Ecuador Sede Ibarra; `ivethortega2016@gmail.com` </br>
-Alvaro SebastiÃ¡n Galarza Bastidas `asgalarza1@pucesi.edu.ec`</br>
+Jorge Javier Andrade Benítez  `jjandrade@pucesi.edu.ec`</br>
+Mónica Gabriela Naranjo Serrano  `mgnaranjo@puce.edu.ec`</br>
+María José Valdospinos Carvajal `mariajosevaldospinos@gmail.com` </br>
+Iveth Alejandra Ortega Pérez;  Pontificia Universidad Católica del Ecuador Sede Ibarra; `ivethortega2016@gmail.com` </br>
+Alvaro Sebastián Galarza Bastidas `asgalarza1@pucesi.edu.ec`</br>
 
-**DescripciÃ³n de instrumento cuantitativo a padres**
+**Descripción de instrumento cuantitativo a padres**
 
-Encuesta a padre/madre o representante legal: La encuesta se aplicÃ³ al grupo de padres o madres o representantes legales de niÃ±os(as) de 7mo aÃ±o de educaciÃ³n bÃ¡sica (entre 10 y 12 aÃ±os) de las escuelas seleccionadas para los casos de estudio. Previamente a la aplicaciÃ³n se realizarÃ¡ una explicaciÃ³n del proyecto y se solicitarÃ¡ el consentimiento informado. Para la selecciÃ³n y diseÃ±o del instrumento se realizÃ³ una revisiÃ³n de literatura en la que se identificaron las variables relacionadas con la movilidad activa de niÃ±os - de 9 a 12 aÃ±os- a la escuela y la influencia de los padres en el modo de transporte de los niÃ±os. Como resultado se identificÃ³ el Cuestionario de familias del proyecto Pedalea y Anda al COle (PACO) el cual fue adaptado, ajustado y validado para las ciudades de Cuenca e Ibarra (Ecuador). Se realizÃ³ una validaciÃ³n transcultural, la revisiÃ³n de temas y preguntas por un grupo de expertos, y el desarrollo de pruebas piloto.  La experticia de los revisores se enfoca en el estudio del entorno construido, la movilidad activa y psicologÃ­a infantil. La revisiÃ³n de expertos contribuyÃ³ en: i) identificar la pertinencia de los temas y las variables que incluye el cuestionario, ii) identificar los temas y variables que se considere relevante incluir para el contexto del estudio, y iii) estructurar las preguntas y definir contenidos que garanticen que la guÃ­a aplicada sea adecuada para los participantes. Una vez realizados los ajustes recomendados por los expertos, el cuestionario guÃ­a se aplicÃ³ a padres de familia que no formarÃ¡n parte del estudio con el propÃ³sito de determinar la claridad del instrumento y realizar los ajustes finales a la encuesta que finalmente fue revisada nuevamente por el grupo de expertos.
+Encuesta a padre/madre o representante legal: La encuesta se aplicó al grupo de padres o madres o representantes legales de niños(as) de 7mo año de educación básica (entre 10 y 12 años) de las escuelas seleccionadas para los casos de estudio. Previamente a la aplicación se realizará una explicación del proyecto y se solicitará el consentimiento informado. Para la selección y diseño del instrumento se realizó una revisión de literatura en la que se identificaron las variables relacionadas con la movilidad activa de niños - de 9 a 12 años- a la escuela y la influencia de los padres en el modo de transporte de los niños. Como resultado se identificó el Cuestionario de familias del proyecto Pedalea y Anda al COle (PACO) el cual fue adaptado, ajustado y validado para las ciudades de Cuenca e Ibarra (Ecuador). Se realizó una validación transcultural, la revisión de temas y preguntas por un grupo de expertos, y el desarrollo de pruebas piloto.  La experticia de los revisores se enfoca en el estudio del entorno construido, la movilidad activa y psicología infantil. La revisión de expertos contribuyó en: i) identificar la pertinencia de los temas y las variables que incluye el cuestionario, ii) identificar los temas y variables que se considere relevante incluir para el contexto del estudio, y iii) estructurar las preguntas y definir contenidos que garanticen que la guía aplicada sea adecuada para los participantes. Una vez realizados los ajustes recomendados por los expertos, el cuestionario guía se aplicó a padres de familia que no formarán parte del estudio con el propósito de determinar la claridad del instrumento y realizar los ajustes finales a la encuesta que finalmente fue revisada nuevamente por el grupo de expertos.
 
-**Fecha de aplicaciÃ³n del instrumento**
+**Fecha de aplicación del instrumento**
 
 Febrero/Marzo 2020
 
@@ -169,17 +169,17 @@ mosaic(SD, shade = TRUE,
 datos <- read_excel("RESULTADOS ENCUESTA A PADRES.xlsx")
 
 datos$escuela<- NA
-datos$escuela[grepl("LC", datos$`Datos encuesta/CÃ³digo de la encuesta`)]<-"C.LC"
-datos$escuela[grepl("NS", datos$`Datos encuesta/CÃ³digo de la encuesta`)]<-"C.NS"
-datos$escuela[grepl("IM", datos$`Datos encuesta/CÃ³digo de la encuesta`)]<-"C.IM"
-datos<- datos[!is.na(datos$escuela),]#Se selecciona Ãºnicamente los datos de cuenca
+datos$escuela[grepl("LC", datos$`Datos encuesta/Código de la encuesta`)]<-"C.LC"
+datos$escuela[grepl("NS", datos$`Datos encuesta/Código de la encuesta`)]<-"C.NS"
+datos$escuela[grepl("IM", datos$`Datos encuesta/Código de la encuesta`)]<-"C.IM"
+datos<- datos[!is.na(datos$escuela),]#Se selecciona únicamente los datos de cuenca
 datos$ciudad<-"Cuenca"
 
 # which(names(datos)=="ciudad")
 # which(names(datos.i)=="ciudad")
 
 datos.i <- read_excel("DATOS ENCUESTAS IBARRA.xlsx")
-datos.i$escuela[datos.i$escuela=="AgustÃ­n Cueva"]<-"I.AC"
+datos.i$escuela[datos.i$escuela=="Agustín Cueva"]<-"I.AC"
 datos.i$escuela[datos.i$escuela=="Ana Luisa Leoro"]<-"I.ALL"
 datos.i$escuela[datos.i$escuela=="Velasco Ibarra"]<-"I.VI"
 datos.i$ciudad<-"Ibarra"
@@ -241,11 +241,11 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-### Genero niÃ±o/a  
+### Genero niño/a  
 Pregunta: `r names(datos[,10])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(10, 10,139,265,c("NiÃ±a", "NiÃ±o", "No sabe/No contesta"), 40, 100)
+plot<- graficos(10, 10,139,265,c("Niña", "Niño", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -259,16 +259,16 @@ Pregunta: `r names(datos[,14])`
 # unique(datos[,14])
 # unique(datos.i[,14])
 
-plot<- graficos(14, 14,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(14, 14,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-`InterpretaciÃ³n del mosaico: TamaÃ±o de cuadros es proporcional al nÃºmero de registros.Los cuadros coloreados en azÃºl significa que contienen mas registros que los esperados bajo la hipÃ³tesis nula de independencia. Los cuadros en rojo significa que ha habido menos registro que los esperados. Es decir, los cuadros coloredos muestran asociaciones o dependiencias (positivas o negativas) entre las categorÃ­as.`  
+`Interpretación del mosaico: Tamaño de cuadros es proporcional al número de registros.Los cuadros coloreados en azúl significa que contienen mas registros que los esperados bajo la hipótesis nula de independencia. Los cuadros en rojo significa que ha habido menos registro que los esperados. Es decir, los cuadros coloredos muestran asociaciones o dependiencias (positivas o negativas) entre las categorías.`  
 
-`En este caso, las categorÃ­as Caminando, Buseta Escolar, Bus Escolar y Bus PÃºblico, son dependientes de la ciudad de Cuenca e Ibarra.Es decir, para Cuenca, se observa una asociaciÃ³n positiva entre as categorias Caminando y Buseta Escolar y negataiva con bus pÃºblico. Mientras que para Ibarra, se observa una asociaciÃ³n postiva con Bus PÃºblico y negativa con Caminando.`
+`En este caso, las categorías Caminando, Buseta Escolar, Bus Escolar y Bus Público, son dependientes de la ciudad de Cuenca e Ibarra.Es decir, para Cuenca, se observa una asociación positiva entre as categorias Caminando y Buseta Escolar y negataiva con bus público. Mientras que para Ibarra, se observa una asociación postiva con Bus Público y negativa con Caminando.`
 
-### Â¿Camina la Ãºltima parte del trayecto?
+### ¿Camina la última parte del trayecto?
 Pregunta: `r names(datos[,16])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -277,9 +277,9 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-`Para Cuenca, se observa una asociaciÃ³n negavita en la categorÃ­a Si camina.`
+`Para Cuenca, se observa una asociación negavita en la categoría Si camina.`
 
-### Â¿Va solo/a a la escuela?
+### ¿Va solo/a a la escuela?
 Pregunta: `r names(datos[,18])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -288,10 +288,10 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-`Para Cuenca, se observa una asociaciÃ³n negativa en la categorÃ­a Si va solo a la escuela. Mientras que para Ibarra, se observa una asociaciÃ³n postiva con Si va solo a la escuela.`
+`Para Cuenca, se observa una asociación negativa en la categoría Si va solo a la escuela. Mientras que para Ibarra, se observa una asociación postiva con Si va solo a la escuela.`
 
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,19])`
@@ -330,7 +330,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 ```
 
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,23])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -365,14 +365,14 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 Pregunta: `r names(datos[,26])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(26,26,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(26,26,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-`Para Cuenca, se observa una asociaciÃ³n postiva en las categorÃ­as Caminando y Buseta Escolar, y negativa en Bus PÃºblico. Mientras que para Ibarra, se observa una asociaciÃ³n positiva con Bus PÃºblico, y negativa con Caminando.`
+`Para Cuenca, se observa una asociación postiva en las categorías Caminando y Buseta Escolar, y negativa en Bus Público. Mientras que para Ibarra, se observa una asociación positiva con Bus Público, y negativa con Caminando.`
 
-### Â¿Camina la primera parte del trayecto?
+### ¿Camina la primera parte del trayecto?
 Pregunta: `r names(datos[,28])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -381,9 +381,9 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-`Para Cuenca, se observa una asociaciÃ³n negativa en la categorÃ­a Si Camina.`
+`Para Cuenca, se observa una asociación negativa en la categoría Si Camina.`
 
-### Â¿Regresa solo/a?
+### ¿Regresa solo/a?
 Pregunta: `r names(datos[,30])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -392,7 +392,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 # mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,31])`
@@ -430,7 +430,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 # mosaic.a(plot)
 ```
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,35])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -458,10 +458,10 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 # mosaic.a(plot)
 ```
 
-## 4. PercepciÃ³n y razones {.tabset .tabset-fade .tabset-pills}
+## 4. Percepción y razones {.tabset .tabset-fade .tabset-pills}
 
 
-<!-- `InterpretaciÃ³n. En relaciÃ³n a la perpeciÃ³n de los padres respecto del modo de transporte, se observÃ³ independencia de las diferetnes preguntas para las Ciudades de Cuenca e Ibarra` -->
+<!-- `Interpretación. En relación a la perpeción de los padres respecto del modo de transporte, se observó independencia de las diferetnes preguntas para las Ciudades de Cuenca e Ibarra` -->
 
 ### Miedo a ir solo/a
 
@@ -475,7 +475,7 @@ ggplotly(plot[[2]])
 
 ### Razones {.tabset .tabset-fade}
 
-Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? Â¿QuÃ© tanta incidencia tienen los siguientes factores?
+¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? ¿Qué tanta incidencia tienen los siguientes factores?
 
 #### Distancia
 Pregunta: `r names(datos[,40])`
@@ -543,13 +543,13 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 
 ## 5. Detalles del desplazamiento {.tabset .tabset-fade .tabset-pills}
 
-<!-- `InterpretaciÃ³n. En relaciÃ³n con los detalles del desplazamiento, se observÃ³ independencia de las diferentes preguntas para las Ciudades de Cuenca e Ibarra` -->
+<!-- `Interpretación. En relación con los detalles del desplazamiento, se observó independencia de las diferentes preguntas para las Ciudades de Cuenca e Ibarra` -->
 
 ### Tiempo de desplazamiento 
 Pregunta: `r names(datos[,48])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(48,48,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "MÃ¡s de 60 min", "No sabe/No contesta"), 40, 100)
+plot<- graficos(48,48,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "Más de 60 min", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -570,7 +570,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,50])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(50,50,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(50,50,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -580,7 +580,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,51])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(51,51,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(51,51,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -591,7 +591,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(52,52,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(52,52,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -600,7 +600,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(53,53,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(53,53,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -609,7 +609,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,54])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(54,54,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(54,54,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -620,7 +620,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,55])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(55,55,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(55,55,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -629,7 +629,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,56])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(56,56,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(56,56,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -638,7 +638,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,57])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(57,57,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(57,57,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -649,7 +649,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,58])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(58,58,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(58,58,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -658,7 +658,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,59])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(59,59,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(59,59,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -667,16 +667,16 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,60])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(60,60,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(60,60,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-## 6. PreocupaciÃ³n en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
+## 6. Preocupación en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
 
-Â¿QuÃ© tanto le preocuparÃ­an estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
+¿Qué tanto le preocuparían estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
 
-<!-- `InterpretaciÃ³n. En relaciÃ³n con elementos de preocupaciÃ³n en caminar y bicicleta, se observÃ³ independencia de las diferentes preguntas para las Ciudades de Cuenca e Ibarra` -->
+<!-- `Interpretación. En relación con elementos de preocupación en caminar y bicicleta, se observó independencia de las diferentes preguntas para las Ciudades de Cuenca e Ibarra` -->
 
 ### Situaciones Generales  {.tabset .tabset-fade}
 
@@ -689,7 +689,7 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,63])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -699,7 +699,7 @@ ggplotly(plot[[2]])
 ```
 
 
-#### Velocidad automÃ³viles
+#### Velocidad automóviles
 Pregunta: `r names(datos[,64])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -726,7 +726,7 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### Presencia de polÃ­cias
+#### Presencia de polícias
 Pregunta: `r names(datos[,67])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -791,7 +791,7 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,74])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -838,7 +838,7 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,79])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -858,22 +858,22 @@ mosaic.a(plot)
 
 ### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade}
 
-Si las siguientes situaciones mejoran Â¿dejarÃ­a a su hijo/a ir caminando o en bicicleta a la escuela?
+Si las siguientes situaciones mejoran ¿dejaría a su hijo/a ir caminando o en bicicleta a la escuela?
 
 #### Distancia
 Pregunta: `r names(datos[,82])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(82,82,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(82,82,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,83])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(83,83,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(83,83,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -882,7 +882,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,84])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(84,84,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(84,84,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -891,7 +891,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,85])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(85,85,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(85,85,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -900,7 +900,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,86])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(86,86,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(86,86,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -909,7 +909,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,87])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(87,87,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(87,87,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -918,7 +918,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,88])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(88,88,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(88,88,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -928,27 +928,27 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,89])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(89,89,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(89,89,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-#### Cantidad niÃ±os
+#### Cantidad niños
 Pregunta: `r names(datos[,90])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(90,90,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(90,90,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
 ## 7. Entorno de las escuelas {.tabset .tabset-fade .tabset-pills}
 
-<!-- `InterpretaciÃ³n. Respecto al entorno entre las escuelas, si se observan asociaciones respecto de Cuenca e Ibarra` -->
+<!-- `Interpretación. Respecto al entorno entre las escuelas, si se observan asociaciones respecto de Cuenca e Ibarra` -->
 
 ### Barrio de las escuelas {.tabset .tabset-fade}
 
-De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opciÃ³n de quÃ© tan de acuerdo estÃ¡ con ellas.
+De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opción de qué tan de acuerdo está con ellas.
 
 #### Ayuda de vecinos
 Pregunta: `r names(datos[,92])`
@@ -960,9 +960,9 @@ mosaic.a(plot)
 # names(datos[,92])
 ```
 
-<!-- `Para el caso de Cuenca, existe una asociaciÃ³n positiva con "Muy de acuerdo" en que los vecinos del barrio de la escuela siempre estÃ¡n dispuestos a ayudar`   -->
+<!-- `Para el caso de Cuenca, existe una asociación positiva con "Muy de acuerdo" en que los vecinos del barrio de la escuela siempre están dispuestos a ayudar`   -->
 
-#### Cuidado de niÃ±os
+#### Cuidado de niños
 Pregunta: `r names(datos[,93])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -972,7 +972,7 @@ mosaic.a(plot)
 # names(datos[,93])
 ```
 
-<!-- `Para el caso de Cuenca, existe una asociaciÃ³n postiva con "Muy de acuerdo" en que los vecinos del barrio de la escuela cuidan de nuestros niÃ±os`  -->
+<!-- `Para el caso de Cuenca, existe una asociación postiva con "Muy de acuerdo" en que los vecinos del barrio de la escuela cuidan de nuestros niños`  -->
 
 #### Confianza
 Pregunta: `r names(datos[,94])`
@@ -985,7 +985,7 @@ mosaic.a(plot)
 
 ```
 
-<!-- `Para el caso de Cuenca, existe una asociaciÃ³n postiva con "Algo de acuerdo" en que los vecinos del barrio de la escuela son de confianza, mientras que para el caso de Ibarra dicha asociacion es negativa.`  -->
+<!-- `Para el caso de Cuenca, existe una asociación postiva con "Algo de acuerdo" en que los vecinos del barrio de la escuela son de confianza, mientras que para el caso de Ibarra dicha asociacion es negativa.`  -->
 
 #### Saludos
 Pregunta: `r names(datos[,95])`
@@ -1006,7 +1006,7 @@ mosaic.a(plot)
 ```
 
 ### Realidad en el entorno de la escuela {.tabset .tabset-fade}
-Responda y marque la opciÃ³n que mÃ¡s refleje la realidad de la zona alrededor de la escuela
+Responda y marque la opción que más refleje la realidad de la zona alrededor de la escuela
 
 #### Limpieza
 Pregunta: `r names(datos[,98])`
@@ -1026,8 +1026,8 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-## 8. PercepciÃ³n final {.tabset .tabset-fade .tabset-pills}
-Â¿QuÃ© tan de acuerdo estÃ¡ usted con las siguientes expresiones?
+## 8. Percepción final {.tabset .tabset-fade .tabset-pills}
+¿Qué tan de acuerdo está usted con las siguientes expresiones?
 
 ### Riesgos cardiovasculares
 Pregunta: `r names(datos[,101])`
@@ -1047,7 +1047,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### ContaminaciÃ³n ambiental
+### Contaminación ambiental
 Pregunta: `r names(datos[,103])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1056,7 +1056,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### TrÃ¡fico y congestiÃ³n
+### Tráfico y congestión
 Pregunta: `r names(datos[,104])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1065,7 +1065,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Aptitudes acadÃ©micas
+### Aptitudes académicas
 Pregunta: `r names(datos[,105])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1074,31 +1074,31 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-## 9. InformaciÃ³n socio-econÃ³mica {.tabset .tabset-fade .tabset-pills}
+## 9. Información socio-económica {.tabset .tabset-fade .tabset-pills}
 
 ### Enfermedad respiratoria
 Pregunta: `r names(datos[,106])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(106,106,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(106,106,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de salud
+### Condición de salud
 Pregunta: `r names(datos[,108])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(108,108,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(108,108,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de visiÃ³n
+### Condición de visión
 Pregunta: `r names(datos[,109])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(109,109,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(109,109,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1116,7 +1116,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,111])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(111,111,139,265,c("Sin estudios", "Primaria","Secundaria", "FormaciÃ³n personal", "Universitarios", "No sabe/no contesta"), 40, 100)
+plot<- graficos(111,111,139,265,c("Sin estudios", "Primaria","Secundaria", "Formación personal", "Universitarios", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -1125,16 +1125,16 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,112])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(112,112,139,265,c("SÃ­", "No", "No sabe/no contesta"), 40, 100)
+plot<- graficos(112,112,139,265,c("Sí", "No", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-### VehÃ­culo
+### Vehículo
 Pregunta: `r names(datos[,113])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(113,113,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(113,113,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -1143,7 +1143,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,114])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(114,114,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(114,114,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
@@ -1262,11 +1262,11 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Genero niÃ±o/a  
+### Genero niño/a  
 Pregunta: `r names(datos[,10])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(10, 10,138,264,139,265,c("NiÃ±a", "NiÃ±o", "No sabe/No contesta"), 40, 100)
+plot<- graficos(10, 10,138,264,139,265,c("Niña", "Niño", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1277,12 +1277,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,14])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Â¿Camina la Ãºltima parte del trayecto?
+### ¿Camina la última parte del trayecto?
 Pregunta: `r names(datos[,16])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1291,7 +1291,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Â¿Va solo/a a la escuela?
+### ¿Va solo/a a la escuela?
 Pregunta: `r names(datos[,18])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1300,7 +1300,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,19])`
@@ -1339,7 +1339,7 @@ mosaic.a(plot)
 ```
 
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,23])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1374,12 +1374,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,26])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Â¿Camina la primera parte del trayecto?
+### ¿Camina la primera parte del trayecto?
 Pregunta: `r names(datos[,28])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1388,7 +1388,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Â¿Regresa solo/a?
+### ¿Regresa solo/a?
 Pregunta: `r names(datos[,30])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1397,7 +1397,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,31])`
@@ -1435,7 +1435,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,35])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1463,7 +1463,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-## 4. PercepciÃ³n y razones {.tabset .tabset-fade .tabset-pills}
+## 4. Percepción y razones {.tabset .tabset-fade .tabset-pills}
 
 ### Miedo a ir solo/a
 
@@ -1477,7 +1477,7 @@ mosaic.a(plot)
 
 ### Razones {.tabset .tabset-fade}
 
-Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? Â¿QuÃ© tanta incidencia tienen los siguientes factores?
+¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? ¿Qué tanta incidencia tienen los siguientes factores?
 
 #### Distancia
 Pregunta: `r names(datos[,40])`
@@ -1533,7 +1533,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))
 mosaic.a(plot)
 ```
 
-[8] "Desplazamiento general/11. Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte pÃºblico)"
+[8] "Desplazamiento general/11. ¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte público)"
 
 #### Conveniencia
 Pregunta: `r names(datos[,46])`
@@ -1550,7 +1550,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,48])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "MÃ¡s de 60 min", "No sabe/No contesta"), 40, 100)
+plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "Más de 60 min", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1571,7 +1571,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,50])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1581,7 +1581,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,51])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1592,7 +1592,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1601,7 +1601,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1610,7 +1610,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,54])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1621,7 +1621,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,55])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1630,7 +1630,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,56])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1639,7 +1639,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,57])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1650,7 +1650,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,58])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1659,7 +1659,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,59])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1668,14 +1668,14 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,60])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-## 6. PreocupaciÃ³n en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
+## 6. Preocupación en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
 
-Â¿QuÃ© tanto le preocuparÃ­an estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
+¿Qué tanto le preocuparían estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
 
 ### Situaciones Generales  {.tabset .tabset-fade}
 
@@ -1688,7 +1688,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,63])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1698,7 +1698,7 @@ mosaic.a(plot)
 ```
 
 
-#### Velocidad automÃ³viles
+#### Velocidad automóviles
 Pregunta: `r names(datos[,64])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1725,7 +1725,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-#### Presencia de polÃ­cias
+#### Presencia de polícias
 Pregunta: `r names(datos[,67])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1790,7 +1790,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,74])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1837,7 +1837,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,79])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1857,22 +1857,22 @@ mosaic.a(plot)
 
 ### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade}
 
-Si las siguientes situaciones mejoran Â¿dejarÃ­a a su hijo/a ir caminando o en bicicleta a la escuela?
+Si las siguientes situaciones mejoran ¿dejaría a su hijo/a ir caminando o en bicicleta a la escuela?
 
 #### Distancia
 Pregunta: `r names(datos[,82])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(82,82,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(82,82,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,83])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(83,83,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(83,83,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -1881,7 +1881,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,84])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(84,84,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(84,84,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -1890,7 +1890,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,85])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(85,85,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(85,85,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1899,7 +1899,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,86])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(86,86,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(86,86,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -1908,7 +1908,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,87])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(87,87,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(87,87,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -1917,7 +1917,7 @@ ggplotly(plot[[2]])
 Pregunta: `r names(datos[,88])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(88,88,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(88,88,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -1927,16 +1927,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,89])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(89,89,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(89,89,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
 
-#### Cantidad niÃ±os
+#### Cantidad niños
 Pregunta: `r names(datos[,90])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(90,90,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(90,90,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -1945,7 +1945,7 @@ ggplotly(plot[[2]])
 
 ### Barrio de las escuelas {.tabset .tabset-fade}
 
-De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opciÃ³n de quÃ© tan de acuerdo estÃ¡ con ellas
+De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opción de qué tan de acuerdo está con ellas
 
 #### Ayuda de vecinos
 Pregunta: `r names(datos[,92])`
@@ -1956,7 +1956,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-#### Cuidado de niÃ±os
+#### Cuidado de niños
 Pregunta: `r names(datos[,93])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -1993,7 +1993,7 @@ mosaic.a(plot)
 ```
 
 ### Realidad en el entorno de la escuela {.tabset .tabset-fade}
-Responda y marque la opciÃ³n que mÃ¡s refleje la realidad de la zona alrededor de la escuela
+Responda y marque la opción que más refleje la realidad de la zona alrededor de la escuela
 
 #### Limpieza
 Pregunta: `r names(datos[,98])`
@@ -2013,8 +2013,8 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-## 8. PercepciÃ³n final {.tabset .tabset-fade .tabset-pills}
-Â¿QuÃ© tan de acuerdo estÃ¡ usted con las siguientes expresiones?
+## 8. Percepción final {.tabset .tabset-fade .tabset-pills}
+¿Qué tan de acuerdo está usted con las siguientes expresiones?
 
 ### Riesgos cardiovasculares
 Pregunta: `r names(datos[,101])`
@@ -2034,7 +2034,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### ContaminaciÃ³n ambiental
+### Contaminación ambiental
 Pregunta: `r names(datos[,103])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2043,7 +2043,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### TrÃ¡fico y congestiÃ³n
+### Tráfico y congestión
 Pregunta: `r names(datos[,104])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2052,7 +2052,7 @@ ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### Aptitudes acadÃ©micas
+### Aptitudes académicas
 Pregunta: `r names(datos[,105])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2061,31 +2061,31 @@ ggplotly(plot[[2]])
 # mosaic.a(plot)
 ```
 
-## 9. InformaciÃ³n socio-econÃ³mica {.tabset .tabset-fade .tabset-pills}
+## 9. Información socio-económica {.tabset .tabset-fade .tabset-pills}
 
 ### Enfermedad respiratoria
 Pregunta: `r names(datos[,106])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(106,106,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(106,106,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de salud
+### Condición de salud
 Pregunta: `r names(datos[,108])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(108,108,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(108,108,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de visiÃ³n
+### Condición de visión
 Pregunta: `r names(datos[,109])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(109,109,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(109,109,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -2103,7 +2103,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,111])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "FormaciÃ³n personal", "Universitarios", "No sabe/no contesta"), 40, 100)
+plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "Formación personal", "Universitarios", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -2112,16 +2112,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,112])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(112,112,138,264,139,265,c("SÃ­", "No", "No sabe/no contesta"), 40, 100)
+plot<- graficos(112,112,138,264,139,265,c("Sí", "No", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
 
-### VehÃ­culo
+### Vehículo
 Pregunta: `r names(datos[,113])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
 mosaic.a(plot)
 ```
@@ -2130,7 +2130,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,114])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])
  mosaic.a(plot)
 ```
@@ -2147,7 +2147,7 @@ mosaic.a(plot)
 
 
 
-# C. Analisis por escuelas y gÃ©nero
+# C. Analisis por escuelas y género
 
 ```{r echo=FALSE , warning=FALSE}
 #Graficos barras x ciudad x escuela x genero
@@ -2221,7 +2221,7 @@ edad<- rbind(edad.c, edad.i)
 
 ```
 
-En los siguientes grÃ¡ficos se omiten los 65 registros de No sabe/No contesta.
+En los siguientes gráficos se omiten los 65 registros de No sabe/No contesta.
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 table(edad$genero)
 
@@ -2268,11 +2268,11 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-<!-- ### Genero niÃ±o/a   -->
+<!-- ### Genero niño/a   -->
 <!-- Pregunta: `r names(datos[,10])` -->
 
 <!-- ```{r echo=FALSE, warning=FALSE} -->
-<!-- plot<- graficos(10, 10,138,264,139,265,c("NiÃ±a", "NiÃ±o", "No sabe/No contesta"), 40, 100) -->
+<!-- plot<- graficos(10, 10,138,264,139,265,c("Niña", "Niño", "No sabe/No contesta"), 40, 100) -->
 <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
 <!-- mosaic.a(plot) -->
 <!-- ``` -->
@@ -2283,12 +2283,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,14])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Camina la Ãºltima parte del trayecto?
+### ¿Camina la última parte del trayecto?
 Pregunta: `r names(datos[,16])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2297,7 +2297,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Va solo/a a la escuela?
+### ¿Va solo/a a la escuela?
 Pregunta: `r names(datos[,18])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2306,7 +2306,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,19])`
@@ -2345,7 +2345,7 @@ mosaic.a(plot)
 ```
 
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,23])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2380,12 +2380,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,26])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Camina la primera parte del trayecto?
+### ¿Camina la primera parte del trayecto?
 Pregunta: `r names(datos[,28])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2394,7 +2394,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Regresa solo/a?
+### ¿Regresa solo/a?
 Pregunta: `r names(datos[,30])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2403,7 +2403,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,31])`
@@ -2441,7 +2441,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,35])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2469,7 +2469,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-## 4. PercepciÃ³n y razones {.tabset .tabset-fade .tabset-pills}
+## 4. Percepción y razones {.tabset .tabset-fade .tabset-pills}
 
 ### Miedo a ir solo/a
 
@@ -2483,7 +2483,7 @@ mosaic.a(plot)
 
 ### Razones {.tabset .tabset-fade}
 
-Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? Â¿QuÃ© tanta incidencia tienen los siguientes factores?
+¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? ¿Qué tanta incidencia tienen los siguientes factores?
 
 #### Distancia
 Pregunta: `r names(datos[,40])`
@@ -2539,7 +2539,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-[8] "Desplazamiento general/11. Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte pÃºblico)"
+[8] "Desplazamiento general/11. ¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte público)"
 
 #### Conveniencia
 Pregunta: `r names(datos[,46])`
@@ -2556,7 +2556,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,48])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "MÃ¡s de 60 min", "No sabe/No contesta"), 40, 100)
+plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "Más de 60 min", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2577,7 +2577,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,50])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2587,7 +2587,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,51])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2598,7 +2598,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2607,7 +2607,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2616,7 +2616,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,54])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2627,7 +2627,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,55])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2636,7 +2636,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,56])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2645,7 +2645,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,57])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2656,7 +2656,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,58])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2665,7 +2665,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,59])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2674,14 +2674,14 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,60])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-## 6. PreocupaciÃ³n en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
+## 6. Preocupación en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
 
-Â¿QuÃ© tanto le preocuparÃ­an estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
+¿Qué tanto le preocuparían estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
 
 ### Situaciones Generales  {.tabset .tabset-fade}
 
@@ -2694,7 +2694,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,63])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2704,7 +2704,7 @@ mosaic.a(plot)
 ```
 
 
-#### Velocidad automÃ³viles
+#### Velocidad automóviles
 Pregunta: `r names(datos[,64])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2731,7 +2731,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Presencia de polÃ­cias
+#### Presencia de polícias
 Pregunta: `r names(datos[,67])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2796,7 +2796,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,74])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2843,7 +2843,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,79])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2863,22 +2863,22 @@ mosaic.a(plot)
 
 ### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade}
 
-Si las siguientes situaciones mejoran Â¿dejarÃ­a a su hijo/a ir caminando o en bicicleta a la escuela?
+Si las siguientes situaciones mejoran ¿dejaría a su hijo/a ir caminando o en bicicleta a la escuela?
 
 #### Distancia
 Pregunta: `r names(datos[,82])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(82,82,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(82,82,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,83])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(83,83,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(83,83,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -2887,7 +2887,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,84])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(84,84,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(84,84,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -2896,7 +2896,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,85])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(85,85,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(85,85,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2905,7 +2905,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,86])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(86,86,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(86,86,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -2914,7 +2914,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,87])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(87,87,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(87,87,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -2923,7 +2923,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,88])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(88,88,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(88,88,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -2933,16 +2933,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,89])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(89,89,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(89,89,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-#### Cantidad niÃ±os
+#### Cantidad niños
 Pregunta: `r names(datos[,90])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(90,90,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(90,90,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -2951,7 +2951,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 
 ### Barrio de las escuelas {.tabset .tabset-fade}
 
-De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opciÃ³n de quÃ© tan de acuerdo estÃ¡ con ellas
+De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opción de qué tan de acuerdo está con ellas
 
 #### Ayuda de vecinos
 Pregunta: `r names(datos[,92])`
@@ -2962,7 +2962,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Cuidado de niÃ±os
+#### Cuidado de niños
 Pregunta: `r names(datos[,93])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -2999,7 +2999,7 @@ mosaic.a(plot)
 ```
 
 ### Realidad en el entorno de la escuela {.tabset .tabset-fade}
-Responda y marque la opciÃ³n que mÃ¡s refleje la realidad de la zona alrededor de la escuela
+Responda y marque la opción que más refleje la realidad de la zona alrededor de la escuela
 
 #### Limpieza
 Pregunta: `r names(datos[,98])`
@@ -3019,8 +3019,8 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-## 8. PercepciÃ³n final {.tabset .tabset-fade .tabset-pills}
-Â¿QuÃ© tan de acuerdo estÃ¡ usted con las siguientes expresiones?
+## 8. Percepción final {.tabset .tabset-fade .tabset-pills}
+¿Qué tan de acuerdo está usted con las siguientes expresiones?
 
 ### Riesgos cardiovasculares
 Pregunta: `r names(datos[,101])`
@@ -3040,7 +3040,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### ContaminaciÃ³n ambiental
+### Contaminación ambiental
 Pregunta: `r names(datos[,103])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3049,7 +3049,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### TrÃ¡fico y congestiÃ³n
+### Tráfico y congestión
 Pregunta: `r names(datos[,104])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3058,7 +3058,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Aptitudes acadÃ©micas
+### Aptitudes académicas
 Pregunta: `r names(datos[,105])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3067,31 +3067,31 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 # mosaic.a(plot)
 ```
 
-## 9. InformaciÃ³n socio-econÃ³mica {.tabset .tabset-fade .tabset-pills}
+## 9. Información socio-económica {.tabset .tabset-fade .tabset-pills}
 
 ### Enfermedad respiratoria
 Pregunta: `r names(datos[,106])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(106,106,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(106,106,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de salud
+### Condición de salud
 Pregunta: `r names(datos[,108])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(108,108,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(108,108,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de visiÃ³n
+### Condición de visión
 Pregunta: `r names(datos[,109])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(109,109,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(109,109,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3109,7 +3109,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,111])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "FormaciÃ³n personal", "Universitarios", "No sabe/no contesta"), 40, 100)
+plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "Formación personal", "Universitarios", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3118,16 +3118,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,112])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(112,112,138,264,139,265,c("SÃ­", "No", "No sabe/no contesta"), 40, 100)
+plot<- graficos(112,112,138,264,139,265,c("Sí", "No", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-### VehÃ­culo
+### Vehículo
 Pregunta: `r names(datos[,113])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3136,7 +3136,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,114])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3152,7 +3152,7 @@ mosaic.a(plot)
 
 
 
-# D. Analisis Caminar y gÃ©nero
+# D. Analisis Caminar y género
 
 ```{r echo=FALSE , warning=FALSE}
 #Graficos barras x ciudad x escuela x genero
@@ -3218,9 +3218,9 @@ mosaic(SD, shade = TRUE,
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 # datos$"Datos encuestado/3.1. Edad"[datos$"Datos encuestado/3.1. Edad"== "-"]<- NA
-datos.c.c<- datos[datos$`Desplazamiento general/Desplazamiento casa-escuela/4. Â¿CÃ³mo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
+datos.c.c<- datos[datos$`Desplazamiento general/Desplazamiento casa-escuela/4. ¿Cómo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
 
-datos.i.c<- datos.i[datos.i$`4. Â¿CÃ³mo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
+datos.i.c<- datos.i[datos.i$`4. ¿Cómo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
 
 edad.c<-data.frame(as.numeric(datos.c.c$"Datos encuestado/3.1. Edad"), datos.c.c$"Datos encuestado/3.5. Su hijo es:",datos.c.c$escuela, datos.c.c$ciudad)
 names(edad.c)<- c("edad", "genero", "escuela", "ciudad")
@@ -3271,11 +3271,11 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-<!-- ### Genero niÃ±o/a   -->
+<!-- ### Genero niño/a   -->
 <!-- Pregunta: `r names(datos[,10])` -->
 
 <!-- ```{r echo=FALSE, warning=FALSE} -->
-<!-- plot<- graficos(10, 10,138,264,139,265,c("NiÃ±a", "NiÃ±o", "No sabe/No contesta"), 40, 100) -->
+<!-- plot<- graficos(10, 10,138,264,139,265,c("Niña", "Niño", "No sabe/No contesta"), 40, 100) -->
 <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
 <!-- mosaic.a(plot) -->
 <!-- ``` -->
@@ -3286,12 +3286,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,14])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 # ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-<!-- ### Â¿Camina la Ãºltima parte del trayecto? -->
+<!-- ### ¿Camina la última parte del trayecto? -->
 <!-- Pregunta: `r names(datos[,16])` -->
 
 <!-- ```{r echo=FALSE, warning=FALSE} -->
@@ -3300,7 +3300,7 @@ mosaic.a(plot)
 <!-- mosaic.a(plot) -->
 <!-- ``` -->
 
-### Â¿Va solo/a a la escuela?
+### ¿Va solo/a a la escuela?
 Pregunta: `r names(datos[,18])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3309,7 +3309,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,19])`
@@ -3348,7 +3348,7 @@ mosaic.a(plot)
 ```
 
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,23])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3383,12 +3383,12 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,26])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
+plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Camina la primera parte del trayecto?
+### ¿Camina la primera parte del trayecto?
 Pregunta: `r names(datos[,28])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3397,7 +3397,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Â¿Regresa solo/a?
+### ¿Regresa solo/a?
 Pregunta: `r names(datos[,30])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3406,7 +3406,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+### Acompañado/a {.tabset .tabset-fade}
 
 #### Madre
 Pregunta: `r names(datos[,31])`
@@ -3444,7 +3444,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-#### Otros niÃ±os/adolescentes
+#### Otros niños/adolescentes
 Pregunta: `r names(datos[,35])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3472,7 +3472,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-## 4. PercepciÃ³n y razones {.tabset .tabset-fade .tabset-pills}
+## 4. Percepción y razones {.tabset .tabset-fade .tabset-pills}
 
 ### Miedo a ir solo/a
 
@@ -3486,7 +3486,7 @@ mosaic.a(plot)
 
 ### Razones {.tabset .tabset-fade}
 
-Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? Â¿QuÃ© tanta incidencia tienen los siguientes factores?
+¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? ¿Qué tanta incidencia tienen los siguientes factores?
 
 #### Distancia
 Pregunta: `r names(datos[,40])`
@@ -3542,7 +3542,7 @@ ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = l
 mosaic.a(plot)
 ```
 
-[8] "Desplazamiento general/11. Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte pÃºblico)"
+[8] "Desplazamiento general/11. ¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte público)"
 
 #### Conveniencia
 Pregunta: `r names(datos[,46])`
@@ -3559,7 +3559,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,48])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "MÃ¡s de 60 min", "No sabe/No contesta"), 40, 100)
+plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "Más de 60 min", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3580,7 +3580,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,50])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3590,7 +3590,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,51])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3601,7 +3601,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3610,7 +3610,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,52])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3619,7 +3619,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,54])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
+plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3630,7 +3630,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,55])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3639,7 +3639,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,56])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3648,7 +3648,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,57])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3659,7 +3659,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,58])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3668,7 +3668,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,59])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3677,14 +3677,14 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,60])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
+plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-## 6. PreocupaciÃ³n en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
+## 6. Preocupación en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
 
-Â¿QuÃ© tanto le preocuparÃ­an estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
+¿Qué tanto le preocuparían estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
 
 ### Situaciones Generales  {.tabset .tabset-fade}
 
@@ -3697,7 +3697,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,63])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3707,7 +3707,7 @@ mosaic.a(plot)
 ```
 
 
-#### Velocidad automÃ³viles
+#### Velocidad automóviles
 Pregunta: `r names(datos[,64])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3734,7 +3734,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Presencia de polÃ­cias
+#### Presencia de polícias
 Pregunta: `r names(datos[,67])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3799,7 +3799,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,74])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3846,7 +3846,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Ausencia niÃ±os
+#### Ausencia niños
 Pregunta: `r names(datos[,79])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -3866,22 +3866,22 @@ mosaic.a(plot)
 
 ### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade}
 
-Si las siguientes situaciones mejoran Â¿dejarÃ­a a su hijo/a ir caminando o en bicicleta a la escuela?
+Si las siguientes situaciones mejoran ¿dejaría a su hijo/a ir caminando o en bicicleta a la escuela?
 
 #### Distancia
 Pregunta: `r names(datos[,82])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(82,82,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(82,82,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-#### TrÃ¡fico
+#### Tráfico
 Pregunta: `r names(datos[,83])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(83,83,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(83,83,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3890,7 +3890,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,84])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(84,84,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(84,84,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3899,7 +3899,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,85])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(85,85,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(85,85,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3908,7 +3908,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,86])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(86,86,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(86,86,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3917,7 +3917,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,87])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(87,87,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(87,87,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3926,7 +3926,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 Pregunta: `r names(datos[,88])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(88,88,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(88,88,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -3936,16 +3936,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,89])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(89,89,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(89,89,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-#### Cantidad niÃ±os
+#### Cantidad niños
 Pregunta: `r names(datos[,90])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(90,90,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(90,90,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -3954,7 +3954,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 
 ### Barrio de las escuelas {.tabset .tabset-fade}
 
-De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opciÃ³n de quÃ© tan de acuerdo estÃ¡ con ellas
+De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opción de qué tan de acuerdo está con ellas
 
 #### Ayuda de vecinos
 Pregunta: `r names(datos[,92])`
@@ -3965,7 +3965,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-#### Cuidado de niÃ±os
+#### Cuidado de niños
 Pregunta: `r names(datos[,93])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -4002,7 +4002,7 @@ mosaic.a(plot)
 ```
 
 ### Realidad en el entorno de la escuela {.tabset .tabset-fade}
-Responda y marque la opciÃ³n que mÃ¡s refleje la realidad de la zona alrededor de la escuela
+Responda y marque la opción que más refleje la realidad de la zona alrededor de la escuela
 
 #### Limpieza
 Pregunta: `r names(datos[,98])`
@@ -4022,8 +4022,8 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-## 8. PercepciÃ³n final {.tabset .tabset-fade .tabset-pills}
-Â¿QuÃ© tan de acuerdo estÃ¡ usted con las siguientes expresiones?
+## 8. Percepción final {.tabset .tabset-fade .tabset-pills}
+¿Qué tan de acuerdo está usted con las siguientes expresiones?
 
 ### Riesgos cardiovasculares
 Pregunta: `r names(datos[,101])`
@@ -4043,7 +4043,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### ContaminaciÃ³n ambiental
+### Contaminación ambiental
 Pregunta: `r names(datos[,103])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -4052,7 +4052,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### TrÃ¡fico y congestiÃ³n
+### Tráfico y congestión
 Pregunta: `r names(datos[,104])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -4061,7 +4061,7 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### Aptitudes acadÃ©micas
+### Aptitudes académicas
 Pregunta: `r names(datos[,105])`
 
 ```{r echo=FALSE, warning=FALSE}
@@ -4070,31 +4070,31 @@ ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 # mosaic.a(plot)
 ```
 
-## 9. InformaciÃ³n socio-econÃ³mica {.tabset .tabset-fade .tabset-pills}
+## 9. Información socio-económica {.tabset .tabset-fade .tabset-pills}
 
 ### Enfermedad respiratoria
 Pregunta: `r names(datos[,106])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(106,106,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(106,106,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de salud
+### Condición de salud
 Pregunta: `r names(datos[,108])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(108,108,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(108,108,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
 
-### CondiciÃ³n de visiÃ³n
+### Condición de visión
 Pregunta: `r names(datos[,109])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(109,109,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
+plot<- graficos(109,109,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -4112,7 +4112,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,111])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "FormaciÃ³n personal", "Universitarios", "No sabe/no contesta"), 40, 100)
+plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "Formación personal", "Universitarios", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -4121,16 +4121,16 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,112])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(112,112,138,264,139,265,c("SÃ­", "No", "No sabe/no contesta"), 40, 100)
+plot<- graficos(112,112,138,264,139,265,c("Sí", "No", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
 
-### VehÃ­culo
+### Vehículo
 Pregunta: `r names(datos[,113])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
 mosaic.a(plot)
 ```
@@ -4139,7 +4139,7 @@ mosaic.a(plot)
 Pregunta: `r names(datos[,114])`
 
 ```{r echo=FALSE, warning=FALSE}
-plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
+plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100)
 ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
  mosaic.a(plot)
 ```
@@ -4155,1007 +4155,1007 @@ mosaic.a(plot)
 
 
 
-# E. Analisis Caminar e ingreso
+<!-- # E. Analisis Caminar e ingreso -->
 
-```{r echo=FALSE , warning=FALSE}
-#Graficos barras x ciudad x escuela x genero
-graficos<- function(colnumber.c,colnumbar.i,escuela.c, escuela.i, facetcolum.c, facetcolumn.i, levels, angle, ylim){
+<!-- ```{r echo=FALSE , warning=FALSE} -->
+<!-- #Graficos barras x ciudad x escuela x genero -->
+<!-- graficos<- function(colnumber.c,colnumbar.i,escuela.c, escuela.i, facetcolum.c, facetcolumn.i, levels, angle, ylim){ -->
 
-    datos.tmp.c<- datos[,c(14,colnumber.c, 10,escuela.c,facetcolum.c)]
-  names(datos.tmp.c)<- c("modo","clase", "ingreso","escuela", "ciudad")
-datos.tmp.i<- datos.i[,c(14,colnumbar.i, 10, escuela.i,facetcolumn.i)]
-  names(datos.tmp.i)<- c("modo","clase", "ingreso","escuela","ciudad")
+<!--     datos.tmp.c<- datos[,c(14,colnumber.c, 10,escuela.c,facetcolum.c)] -->
+<!--   names(datos.tmp.c)<- c("modo","clase", "ingreso","escuela", "ciudad") -->
+<!-- datos.tmp.i<- datos.i[,c(14,colnumbar.i, 10, escuela.i,facetcolumn.i)] -->
+<!--   names(datos.tmp.i)<- c("modo","clase", "ingreso","escuela","ciudad") -->
 
-datos.tmp<- rbind(datos.tmp.c, datos.tmp.i)
+<!-- datos.tmp<- rbind(datos.tmp.c, datos.tmp.i) -->
 
-datos.tmp<- datos.tmp[datos.tmp$modo=="Caminando",]
+<!-- datos.tmp<- datos.tmp[datos.tmp$modo=="Caminando",] -->
 
-datos.tmp$clase[is.na(datos.tmp$clase)]<-"No sabe/No contesta"
-datos.tmp<-datos.tmp[datos.tmp$ingreso!= "No sabe/No contesta",]
-# datos.tmp$ingreso<-droplevels(datos.tmp)$ingreso
+<!-- datos.tmp$clase[is.na(datos.tmp$clase)]<-"No sabe/No contesta" -->
+<!-- datos.tmp<-datos.tmp[datos.tmp$ingreso!= "No sabe/No contesta",] -->
+<!-- # datos.tmp$ingreso<-droplevels(datos.tmp)$ingreso -->
 
-datos.tmp$clase<- factor(datos.tmp$clase, levels=levels,ordered=TRUE)
+<!-- datos.tmp$clase<- factor(datos.tmp$clase, levels=levels,ordered=TRUE) -->
 
-datos.tmp.2 <-datos.tmp %>% dplyr::group_by(ingreso,ciudad,escuela,clase)%>%  
-    na.omit() %>% dplyr::summarise(n = dplyr::n())%>%
-  dplyr::mutate(Frecuencia = round(100*n / sum(n),2))
+<!-- datos.tmp.2 <-datos.tmp %>% dplyr::group_by(ingreso,ciudad,escuela,clase)%>%   -->
+<!--     na.omit() %>% dplyr::summarise(n = dplyr::n())%>% -->
+<!--   dplyr::mutate(Frecuencia = round(100*n / sum(n),2)) -->
 
-# print(sum(datos.tmp.2$Frecuencia))
+<!-- # print(sum(datos.tmp.2$Frecuencia)) -->
 
-p<- ggplot(datos.tmp.2, aes(x=clase, y=Frecuencia, fill=factor(escuela)))+ geom_bar(stat="identity",position="dodge")+ theme(axis.text.x = element_text(angle = angle)) +labs(x="", y="%") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+
-  guides(fill=guide_legend(title=""))+facet_grid(ingreso~ciudad)
+<!-- p<- ggplot(datos.tmp.2, aes(x=clase, y=Frecuencia, fill=factor(escuela)))+ geom_bar(stat="identity",position="dodge")+ theme(axis.text.x = element_text(angle = angle)) +labs(x="", y="%") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+ -->
+<!--   guides(fill=guide_legend(title=""))+facet_grid(ingreso~ciudad) -->
 
-return(list(datos.tmp,p))
-}
+<!-- return(list(datos.tmp,p)) -->
+<!-- } -->
 
-mosaic.a<- function(plot){
-SD<- structable(clase ~ ciudad+ingreso, data = plot[[1]])
-mosaic(SD, shade = TRUE,
-         labeling = labeling_values,#,labeling_residuals
-       split_vertical = c(TRUE, FALSE, TRUE),
-        # spacing = spacing_dimequal(c(2,2,2,2)),
-       # split_vertical = c(FALSE, FALSE, FALSE, TRUE),
-         labeling_args = list(abbreviate_labs = 9,
-                              gp_labels = gpar(fontsize = 8),
-                              varnames=c(FALSE,FALSE),
-                              rot_labels=c(0,0,90,0),
-                              just_labels = c("left", "right", "right", "right")))
-}
+<!-- mosaic.a<- function(plot){ -->
+<!-- SD<- structable(clase ~ ciudad+ingreso, data = plot[[1]]) -->
+<!-- mosaic(SD, shade = TRUE, -->
+<!--          labeling = labeling_values,#,labeling_residuals -->
+<!--        split_vertical = c(TRUE, FALSE, TRUE), -->
+<!--         # spacing = spacing_dimequal(c(2,2,2,2)), -->
+<!--        # split_vertical = c(FALSE, FALSE, FALSE, TRUE), -->
+<!--          labeling_args = list(abbreviate_labs = 9, -->
+<!--                               gp_labels = gpar(fontsize = 8), -->
+<!--                               varnames=c(FALSE,FALSE), -->
+<!--                               rot_labels=c(0,0,90,0), -->
+<!--                               just_labels = c("left", "right", "right", "right"))) -->
+<!-- } -->
 
-# mosaic(SD, split_vertical = c(TRUE, FALSE, TRUE), labeling_args = list(abbreviate_labs = c(Eye = 3)))
-# 
-# doubledecker()
-# 
-# vcd::doubledecker( clase ~ genero, SD)
-# pairs(SD)
-
-
-
-```
-
-## 1. Datos Encuestado {.tabset .tabset-fade .tabset-pills}
-
-### Edad {.tabset .tabset-fade}
-
-#### Encuestado
-
-```{r echo=FALSE, warning=FALSE, message=FALSE}
-# datos$"Datos encuestado/3.1. Edad"[datos$"Datos encuestado/3.1. Edad"== "-"]<- NA
-datos.c.c<- datos[datos$`Desplazamiento general/Desplazamiento casa-escuela/4. Â¿CÃ³mo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
-
-datos.i.c<- datos.i[datos.i$`4. Â¿CÃ³mo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",]
+<!-- # mosaic(SD, split_vertical = c(TRUE, FALSE, TRUE), labeling_args = list(abbreviate_labs = c(Eye = 3))) -->
+<!-- #  -->
+<!-- # doubledecker() -->
+<!-- #  -->
+<!-- # vcd::doubledecker( clase ~ genero, SD) -->
+<!-- # pairs(SD) -->
 
 
-edad.c<-data.frame(as.numeric(datos.c.c$"Datos encuestado/3.1. Edad"), datos.c.c$"InformaciÃ³n general del hogar/37. Â¿CuÃ¡l es el ingreso aproximado de la unidad familiar (dÃ³lares)?" ,datos.c.c$escuela, datos.c.c$ciudad)
-names(edad.c)<- c("edad", "ingreso", "escuela", "ciudad")
 
-edad.i<-data.frame(as.numeric(datos.i.c$"3.1. Edad"), datos.i.c$"Â¿CuÃ¡l es el ingreso aproximado de la unidad familiar (dÃ³lares)?", datos.i.c$escuela, datos.i.c$ciudad)
-names(edad.i)<- c("edad", "ingreso","escuela", "ciudad")
+<!-- ``` -->
 
-edad<- rbind(edad.c, edad.i)
+<!-- ## 1. Datos Encuestado {.tabset .tabset-fade .tabset-pills} -->
 
-edad<-edad[edad$ingreso!= "No sabe/No contesta",]
-edad$ingreso<-droplevels(edad)$ingreso
+<!-- ### Edad {.tabset .tabset-fade} -->
 
-edad$ingreso<-droplevels(edad)$ingreso
+<!-- #### Encuestado -->
 
-ggplotly(ggplot(edad)+ geom_density(aes(x=edad, y=stat(count), fill=factor(escuela)),position = "identity",alpha = 0.5) + theme(axis.text.x = element_text(angle = 0)) +labs(x="", y="") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+
-  guides(fill=guide_legend(title=""))+facet_grid(ingreso~ciudad))%>% layout(legend = list(orientation = "l", x = 1.1))
-```
+<!-- ```{r echo=FALSE, warning=FALSE, message=FALSE} -->
+<!-- # datos$"Datos encuestado/3.1. Edad"[datos$"Datos encuestado/3.1. Edad"== "-"]<- NA -->
+<!-- datos.c.c<- datos[datos$`Desplazamiento general/Desplazamiento casa-escuela/4. ¿Cómo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",] -->
 
-#### Hijo/a o representado
-
-```{r echo=FALSE, warning=FALSE, message=FALSE}
-datos$"3.2. Edad de su hijo/a o representado"[datos$"Datos encuestado/3.2. Edad de su hijo/a o representado" == "-"]<- NA
-datos$"3.2. Edad de su hijo/a o representado"[datos$"Datos encuestado/3.2. Edad de su hijo/a o representado" == "NC"]<- NA
+<!-- datos.i.c<- datos.i[datos.i$`4. ¿Cómo va su hijo/a la escuela? (Marque solo el principal modo de desplazamiento)`=="Caminando",] -->
 
 
-edad.h.c<-data.frame(as.numeric(datos.c.c$"Datos encuestado/3.2. Edad de su hijo/a o representado"[!is.na(datos.c.c$"Datos encuestado/3.2. Edad de su hijo/a o representado")]), datos.c.c$"Datos encuestado/3.5. Su hijo es:",datos.c.c$escuela, datos.c.c$ciudad)
-names(edad.h.c)<- c("edad","genero", "escuela", "ciudad")
-edad.h.c$edad[edad.h.c$edad == "1"]<- NA
+<!-- edad.c<-data.frame(as.numeric(datos.c.c$"Datos encuestado/3.1. Edad"), datos.c.c$"Información general del hogar/37. ¿Cuál es el ingreso aproximado de la unidad familiar (dólares)?" ,datos.c.c$escuela, datos.c.c$ciudad) -->
+<!-- names(edad.c)<- c("edad", "ingreso", "escuela", "ciudad") -->
 
-edad.h.i<-data.frame(as.numeric(datos.i.c$"3.2. Edad de su hijo/a o representado"),datos.i.c$"3.5. Su hijo es:", datos.i.c$escuela, datos.i.c$ciudad)
-names(edad.h.i)<- c("edad", "genero","escuela", "ciudad")
+<!-- edad.i<-data.frame(as.numeric(datos.i.c$"3.1. Edad"), datos.i.c$`37. ¿Cuál es el ingreso aproximado de la unidad familiar (dólares)?`, datos.i.c$escuela, datos.i.c$ciudad) -->
+<!-- names(edad.i)<- c("edad", "ingreso","escuela", "ciudad") -->
 
-edad.h<- rbind(edad.h.c, edad.h.i)
+<!-- edad<- rbind(edad.c, edad.i) -->
 
-edad.h<-edad.h[edad.h$genero!= "No sabe/No contesta",]
-edad.h$genero<-droplevels(edad.h)$genero
+<!-- edad<-edad[edad$ingreso!= "No sabe/No contesta",] -->
+<!-- edad$ingreso<-droplevels(edad)$ingreso -->
 
-ggplotly(ggplot(edad.h)+ geom_density(aes(x=edad, y=stat(count), fill=factor(escuela)),position = "identity",alpha = 0.5) + theme(axis.text.x = element_text(angle = 0)) +labs(x="", y="") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+
-  guides(fill=guide_legend(title=""))+facet_grid(genero~ciudad)) %>% layout(legend = list(orientation = "l", x = 1.1))
+<!-- edad$ingreso<-droplevels(edad)$ingreso -->
 
-```
+<!-- ggplotly(ggplot(edad)+ geom_density(aes(x=edad, y=stat(count), fill=factor(escuela)),position = "identity",alpha = 0.5) + theme(axis.text.x = element_text(angle = 0)) +labs(x="", y="") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+ -->
+<!--   guides(fill=guide_legend(title=""))+facet_grid(ingreso~ciudad))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- ``` -->
 
-### Parentezco  
-Pregunta: `r names(datos[,8])`
+<!-- #### Hijo/a o representado -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(8, 8,115,264, 139,265,c("Madre", "Padre", "Otro", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE, message=FALSE} -->
+<!-- datos$"3.2. Edad de su hijo/a o representado"[datos$"Datos encuestado/3.2. Edad de su hijo/a o representado" == "-"]<- NA -->
+<!-- datos$"3.2. Edad de su hijo/a o representado"[datos$"Datos encuestado/3.2. Edad de su hijo/a o representado" == "NC"]<- NA -->
 
-<!-- ### Genero niÃ±o/a   -->
-<!-- Pregunta: `r names(datos[,10])` -->
+
+<!-- edad.h.c<-data.frame(as.numeric(datos.c.c$"Datos encuestado/3.2. Edad de su hijo/a o representado"[!is.na(datos.c.c$"Datos encuestado/3.2. Edad de su hijo/a o representado")]), datos.c.c$"Datos encuestado/3.5. Su hijo es:",datos.c.c$escuela, datos.c.c$ciudad) -->
+<!-- names(edad.h.c)<- c("edad","genero", "escuela", "ciudad") -->
+<!-- edad.h.c$edad[edad.h.c$edad == "1"]<- NA -->
+
+<!-- edad.h.i<-data.frame(as.numeric(datos.i.c$"3.2. Edad de su hijo/a o representado"),datos.i.c$"3.5. Su hijo es:", datos.i.c$escuela, datos.i.c$ciudad) -->
+<!-- names(edad.h.i)<- c("edad", "genero","escuela", "ciudad") -->
+
+<!-- edad.h<- rbind(edad.h.c, edad.h.i) -->
+
+<!-- edad.h<-edad.h[edad.h$genero!= "No sabe/No contesta",] -->
+<!-- edad.h$genero<-droplevels(edad.h)$genero -->
+
+<!-- ggplotly(ggplot(edad.h)+ geom_density(aes(x=edad, y=stat(count), fill=factor(escuela)),position = "identity",alpha = 0.5) + theme(axis.text.x = element_text(angle = 0)) +labs(x="", y="") + scale_fill_manual(values=c("dodgerblue4","dodgerblue2", "lightsteelblue1","darkorange4","darkorange2","peachpuff"))+ -->
+<!--   guides(fill=guide_legend(title=""))+facet_grid(genero~ciudad)) %>% layout(legend = list(orientation = "l", x = 1.1)) -->
+
+<!-- ``` -->
+
+<!-- ### Parentezco   -->
+<!-- Pregunta: `r names(datos[,8])` -->
 
 <!-- ```{r echo=FALSE, warning=FALSE} -->
-<!-- plot<- graficos(10, 10,138,264,139,265,c("NiÃ±a", "NiÃ±o", "No sabe/No contesta"), 40, 100) -->
+<!-- plot<- graficos(8, 8,115,264, 139,265,c("Madre", "Padre", "Otro", "No sabe/No contesta"), 40, 100) -->
 <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
 <!-- mosaic.a(plot) -->
 <!-- ``` -->
 
-## 2. Modo desplazamiento casa-escuela {.tabset .tabset-fade .tabset-pills}
+<!-- <!-- ### Genero niño/a   --> -->
+<!-- <!-- Pregunta: `r names(datos[,10])` --> -->
 
-### Desplazamiento 
-Pregunta: `r names(datos[,14])`
+<!-- <!-- ```{r echo=FALSE, warning=FALSE} --> -->
+<!-- <!-- plot<- graficos(10, 10,138,264,139,265,c("Niña", "Niño", "No sabe/No contesta"), 40, 100) --> -->
+<!-- <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) --> -->
+<!-- <!-- mosaic.a(plot) --> -->
+<!-- <!-- ``` --> -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
-# ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ## 2. Modo desplazamiento casa-escuela {.tabset .tabset-fade .tabset-pills} -->
 
-<!-- ### Â¿Camina la Ãºltima parte del trayecto? -->
-<!-- Pregunta: `r names(datos[,16])` -->
+<!-- ### Desplazamiento  -->
+<!-- Pregunta: `r names(datos[,14])` -->
 
 <!-- ```{r echo=FALSE, warning=FALSE} -->
-<!-- plot<- graficos(16, 16,138,264,139,265,c("Si camina", "No camina","No sabe/No contesta"), 40, 100) -->
+<!-- plot<- graficos(14, 14,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100) -->
+<!-- # ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- <!-- ### ¿Camina la última parte del trayecto? --> -->
+<!-- <!-- Pregunta: `r names(datos[,16])` --> -->
+
+<!-- <!-- ```{r echo=FALSE, warning=FALSE} --> -->
+<!-- <!-- plot<- graficos(16, 16,138,264,139,265,c("Si camina", "No camina","No sabe/No contesta"), 40, 100) --> -->
+<!-- <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) --> -->
+<!-- <!-- mosaic.a(plot) --> -->
+<!-- <!-- ``` --> -->
+
+<!-- ### ¿Va solo/a a la escuela? -->
+<!-- Pregunta: `r names(datos[,18])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(18, 18,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Acompañado/a {.tabset .tabset-fade} -->
+
+<!-- #### Madre -->
+<!-- Pregunta: `r names(datos[,19])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(19, 19,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Padre -->
+<!-- Pregunta: `r names(datos[,20])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(20, 20,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Abuela -->
+<!-- Pregunta: `r names(datos[,21])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(21,21,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Abuelo -->
+<!-- Pregunta: `r names(datos[,22])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(22,22,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si"))) %>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- #### Otros niños/adolescentes -->
+<!-- Pregunta: `r names(datos[,23])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(23,23,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Otros adultos o persona que supervisa -->
+<!-- Pregunta: `r names(datos[,24])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(24,24,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- #### No sabe/No contesta -->
+<!-- Pregunta: `r names(datos[,25])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(25,25,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- ## 3. Modo desplazamiento escuela-casa {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ### Desplazamiento -->
+<!-- Pregunta: `r names(datos[,26])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "Automóvil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus Público", "Metro/Tren/Tranvía ", "Otro","No sabe/No contesta"), 40, 100) -->
 <!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
 <!-- mosaic.a(plot) -->
 <!-- ``` -->
 
-### Â¿Va solo/a a la escuela?
-Pregunta: `r names(datos[,18])`
+<!-- ### ¿Camina la primera parte del trayecto? -->
+<!-- Pregunta: `r names(datos[,28])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(18, 18,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(28,28,138,264,139,265,c("Si camina", "No camina","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+<!-- ### ¿Regresa solo/a? -->
+<!-- Pregunta: `r names(datos[,30])` -->
 
-#### Madre
-Pregunta: `r names(datos[,19])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(30,30,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Acompañado/a {.tabset .tabset-fade} -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(19, 19,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- #### Madre -->
+<!-- Pregunta: `r names(datos[,31])` -->
 
-#### Padre
-Pregunta: `r names(datos[,20])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(31,31,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(20, 20,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- #### Padre -->
+<!-- Pregunta: `r names(datos[,32])` -->
 
-#### Abuela
-Pregunta: `r names(datos[,21])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(32,32,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Abuela -->
+<!-- Pregunta: `r names(datos[,33])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(21,21,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Abuelo
-Pregunta: `r names(datos[,22])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(33,33,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ####  Abuelo -->
+<!-- Pregunta: `r names(datos[,34])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(34,34,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Otros niños/adolescentes -->
+<!-- Pregunta: `r names(datos[,35])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(35,35,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Otros adultos o persona que supervisa -->
+<!-- Pregunta: `r names(datos[,36])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(22,22,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si"))) %>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(36,36,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- #### No sabe/No contesta -->
+<!-- Pregunta: `r names(datos[,37])` -->
 
-#### Otros niÃ±os/adolescentes
-Pregunta: `r names(datos[,23])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(23,23,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(37,37,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-#### Otros adultos o persona que supervisa
-Pregunta: `r names(datos[,24])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(24,24,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
+<!-- ## 4. Percepción y razones {.tabset .tabset-fade .tabset-pills} -->
 
-#### No sabe/No contesta
-Pregunta: `r names(datos[,25])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(25,25,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ### Miedo a ir solo/a -->
 
+<!-- Pregunta: `r names(datos[,38])` -->
 
-## 3. Modo desplazamiento escuela-casa {.tabset .tabset-fade .tabset-pills}
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(38,38,138,264,139,265,c("Si tengo miedo", "No tengo miedo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-### Desplazamiento
-Pregunta: `r names(datos[,26])`
+<!-- ### Razones {.tabset .tabset-fade} -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(26,26,138,264,139,265,c("Caminando", "Bicicleta", "AutomÃ³vil", "Moto", "Bus Escolar", "Buseta Escolar", "Bus PÃºblico", "Metro/Tren/TranvÃ­a ", "Otro","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? ¿Qué tanta incidencia tienen los siguientes factores? -->
 
-### Â¿Camina la primera parte del trayecto?
-Pregunta: `r names(datos[,28])`
+<!-- #### Distancia -->
+<!-- Pregunta: `r names(datos[,40])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(28,28,138,264,139,265,c("Si camina", "No camina","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(40,40,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- # mosaic.a(plot) -->
+<!-- ``` -->
 
-### Â¿Regresa solo/a?
-Pregunta: `r names(datos[,30])`
+<!-- #### Seguridad Vial -->
+<!-- Pregunta: `r names(datos[,41])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(30,30,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### AcompaÃ±ado/a {.tabset .tabset-fade}
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(41,41,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- # mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Seguridad Personal -->
+<!-- Pregunta: `r names(datos[,42])` -->
 
-#### Madre
-Pregunta: `r names(datos[,31])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(42,42,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Relaciones Sociales -->
+<!-- Pregunta: `r names(datos[,43])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(43,43,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Costo -->
+<!-- Pregunta: `r names(datos[,44])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(31,31,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(44,44,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-#### Padre
-Pregunta: `r names(datos[,32])`
+<!-- #### Salud -->
+<!-- Pregunta: `r names(datos[,45])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(32,32,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Abuela
-Pregunta: `r names(datos[,33])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(45,45,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- [8] "Desplazamiento general/11. ¿Cuáles son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte público)" -->
+
+<!-- #### Conveniencia -->
+<!-- Pregunta: `r names(datos[,46])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(46,46,138,264,139,265,c("0", "1"), 40, 100) -->
+<!-- ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ## 5. Detalles del desplazamiento {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ### Tiempo de desplazamiento  -->
+<!-- Pregunta: `r names(datos[,48])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "Más de 60 min", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(33,33,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-####  Abuelo
-Pregunta: `r names(datos[,34])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(34,34,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Otros niÃ±os/adolescentes
-Pregunta: `r names(datos[,35])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(35,35,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Otros adultos o persona que supervisa
-Pregunta: `r names(datos[,36])`
+<!-- ### Distancia aceptable  {.tabset .tabset-fade} -->
+
+<!-- #### Solo/a -->
+<!-- Pregunta: `r names(datos[,49])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(49,49,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Con menores -->
+<!-- Pregunta: `r names(datos[,50])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(36,36,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-
-#### No sabe/No contesta
-Pregunta: `r names(datos[,37])`
+
+<!-- #### Con adultos -->
+<!-- Pregunta: `r names(datos[,51])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(37,37,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-## 4. PercepciÃ³n y razones {.tabset .tabset-fade .tabset-pills}
+<!-- ### Distancia aceptable en bicicleta  {.tabset .tabset-fade} -->
 
-### Miedo a ir solo/a
+<!-- #### Solo/a -->
+<!-- Pregunta: `r names(datos[,52])` -->
 
-Pregunta: `r names(datos[,38])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Con menores -->
+<!-- Pregunta: `r names(datos[,52])` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(38,38,138,264,139,265,c("Si tengo miedo", "No tengo miedo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-### Razones {.tabset .tabset-fade}
+<!-- #### Con adultos -->
+<!-- Pregunta: `r names(datos[,54])` -->
 
-Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? Â¿QuÃ© tanta incidencia tienen los siguientes factores?
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "Más de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-#### Distancia
-Pregunta: `r names(datos[,40])`
+<!-- ### Caminar a la escuela  {.tabset .tabset-fade} -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(40,40,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-# mosaic.a(plot)
-```
+<!-- #### Solo/a -->
+<!-- Pregunta: `r names(datos[,55])` -->
 
-#### Seguridad Vial
-Pregunta: `r names(datos[,41])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(41,41,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-# mosaic.a(plot)
-```
+<!-- #### Con menores -->
+<!-- Pregunta: `r names(datos[,56])` -->
 
-#### Seguridad Personal
-Pregunta: `r names(datos[,42])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(42,42,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- #### Con adultos -->
+<!-- Pregunta: `r names(datos[,57])` -->
 
-#### Relaciones Sociales
-Pregunta: `r names(datos[,43])`
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(43,43,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Costo
-Pregunta: `r names(datos[,44])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(44,44,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Salud
-Pregunta: `r names(datos[,45])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(45,45,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-[8] "Desplazamiento general/11. Â¿CuÃ¡les son las principales razones por las que su hijo se va/vuelve de la escuela en el modo indicado? (Puede marcar varias opciones)/Conveniencia (ej: horarios padres, paradas cercanas de transporte pÃºblico)"
-
-#### Conveniencia
-Pregunta: `r names(datos[,46])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(46,46,138,264,139,265,c("0", "1"), 40, 100)
-ggplotly(plot[[2]]+ scale_x_discrete(labels=c("No", "Si")))%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-## 5. Detalles del desplazamiento {.tabset .tabset-fade .tabset-pills}
-
-### Tiempo de desplazamiento 
-Pregunta: `r names(datos[,48])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(48,48,138,264,139,265,c("Menos de 5 min", "Entre 5 min y 15 min", "Entre 15 min y 30 min", "Entre 30 min y 60 min", "MÃ¡s de 60 min", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-
-### Distancia aceptable  {.tabset .tabset-fade}
-
-#### Solo/a
-Pregunta: `r names(datos[,49])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(49,49,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con menores
-Pregunta: `r names(datos[,50])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(50,50,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-
-#### Con adultos
-Pregunta: `r names(datos[,51])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(51,51,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Distancia aceptable en bicicleta  {.tabset .tabset-fade}
-
-#### Solo/a
-Pregunta: `r names(datos[,52])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(52,52,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con menores
-Pregunta: `r names(datos[,52])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(53,53,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con adultos
-Pregunta: `r names(datos[,54])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(54,54,138,264,139,265,c("Ninguna", "Menos de 5 cuadras (menos de 0.5 km)", "Entre 5 y 15 cuadras (entre 0.5 y 1.5 km)", "Entre 15 y 30 cuadras (entre 1.5 y 3 km)", "Entre 30 y 60 cuadras (entre 3 y 6 km)", "MÃ¡s de 60 cuadras (mayor a 6 km)","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Caminar a la escuela  {.tabset .tabset-fade}
-
-#### Solo/a
-Pregunta: `r names(datos[,55])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(55,55,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con menores
-Pregunta: `r names(datos[,56])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(56,56,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con adultos
-Pregunta: `r names(datos[,57])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(57,57,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Ir en bicileta a la escuela  {.tabset .tabset-fade}
-
-#### Solo/a
-Pregunta: `r names(datos[,58])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con menores
-Pregunta: `r names(datos[,59])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Con adultos
-Pregunta: `r names(datos[,60])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 aÃ±os","10 - 11 aÃ±os","12 - 13 aÃ±os", "14 - 15 aÃ±os", "16 - 17 aÃ±os" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-## 6. PreocupaciÃ³n en caminar y bicicleta {.tabset .tabset-fade .tabset-pills}
-
-Â¿QuÃ© tanto le preocuparÃ­an estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela?
-
-### Situaciones Generales  {.tabset .tabset-fade}
-
-#### Distancia
-Pregunta: `r names(datos[,62])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(62,62,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### TrÃ¡fico
-Pregunta: `r names(datos[,63])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(63,63,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-
-#### Velocidad automÃ³viles
-Pregunta: `r names(datos[,64])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(64,64,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Tiempo
-Pregunta: `r names(datos[,65])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(65,65,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Seguridad intersecciones
-Pregunta: `r names(datos[,66])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(66,66,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Presencia de polÃ­cias
-Pregunta: `r names(datos[,67])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(67,67,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Violencia
-Pregunta: `r names(datos[,68])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(68,68,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Frio/calor
-Pregunta: `r names(datos[,69])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(69,69,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Lluvia
-Pregunta: `r names(datos[,70])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(70,70,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Peso mochila
-Pregunta: `r names(datos[,71])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(71,71,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Sobre caminar  {.tabset .tabset-fade}
-
-#### Ausencia adultos
-Pregunta: `r names(datos[,72])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(72,72,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Veredas mal estado
-Pregunta: `r names(datos[,73])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(73,73,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Ausencia niÃ±os
-Pregunta: `r names(datos[,74])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(74,74,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Aburrimiento
-Pregunta: `r names(datos[,75])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(75,75,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Sobre biclicleta  {.tabset .tabset-fade}
-
-#### Ausencia adultos
-Pregunta: `r names(datos[,76])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(76,76,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Ausencia de ciclovias
-Pregunta: `r names(datos[,77])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(77,77,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Espacio para bicicleta
-Pregunta: `r names(datos[,78])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(78,78,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Ausencia niÃ±os
-Pregunta: `r names(datos[,79])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(79,79,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Aburrimiento
-Pregunta: `r names(datos[,80])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(80,80,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade}
-
-Si las siguientes situaciones mejoran Â¿dejarÃ­a a su hijo/a ir caminando o en bicicleta a la escuela?
-
-#### Distancia
-Pregunta: `r names(datos[,82])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(82,82,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### TrÃ¡fico
-Pregunta: `r names(datos[,83])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(83,83,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Intersecciones
-Pregunta: `r names(datos[,84])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(84,84,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Violencia
-Pregunta: `r names(datos[,85])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(85,85,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Cantidad de personas
-Pregunta: `r names(datos[,86])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(86,86,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Veredas
-Pregunta: `r names(datos[,87])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(87,87,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Ciclovias
-Pregunta: `r names(datos[,88])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(88,88,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-
-#### Dejar bicicletas
-Pregunta: `r names(datos[,89])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(89,89,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Cantidad niÃ±os
-Pregunta: `r names(datos[,90])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(90,90,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-## 7. Entorno de las escuelas {.tabset .tabset-fade .tabset-pills}
-
-### Barrio de las escuelas {.tabset .tabset-fade}
-
-De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opciÃ³n de quÃ© tan de acuerdo estÃ¡ con ellas
-
-#### Ayuda de vecinos
-Pregunta: `r names(datos[,92])`
-
-```{r}
-plot<- graficos(92,92,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Cuidado de niÃ±os
-Pregunta: `r names(datos[,93])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(93,93,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Confianza
-Pregunta: `r names(datos[,94])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(94,94,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Saludos
-Pregunta: `r names(datos[,95])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(95,95,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-#### Ambiente agradable
-Pregunta: `r names(datos[,96])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(96,96,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Realidad en el entorno de la escuela {.tabset .tabset-fade}
-Responda y marque la opciÃ³n que mÃ¡s refleje la realidad de la zona alrededor de la escuela
-
-#### Limpieza
-Pregunta: `r names(datos[,98])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(98,98,138,264,139,265,c("Ninguno", "Casi nada", "Pocos",  "Muchos", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-#### Arboles
-Pregunta: `r names(datos[,99])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(99,99,138,264,139,265,c("Ninguno", "Casi nada", "Pocos",  "Muchos", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-## 8. PercepciÃ³n final {.tabset .tabset-fade .tabset-pills}
-Â¿QuÃ© tan de acuerdo estÃ¡ usted con las siguientes expresiones?
-
-### Riesgos cardiovasculares
-Pregunta: `r names(datos[,101])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(101,101,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Obesidad
-Pregunta: `r names(datos[,102])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(102,102,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### ContaminaciÃ³n ambiental
-Pregunta: `r names(datos[,103])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(103,103,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### TrÃ¡fico y congestiÃ³n
-Pregunta: `r names(datos[,104])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(104,104,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Aptitudes acadÃ©micas
-Pregunta: `r names(datos[,105])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(105,105,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-# mosaic.a(plot)
-```
-
-## 9. InformaciÃ³n socio-econÃ³mica {.tabset .tabset-fade .tabset-pills}
-
-### Enfermedad respiratoria
-Pregunta: `r names(datos[,106])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(106,106,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### CondiciÃ³n de salud
-Pregunta: `r names(datos[,108])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(108,108,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### CondiciÃ³n de visiÃ³n
-Pregunta: `r names(datos[,109])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(109,109,138,264,139,265,c("SÃ­", "No", "No sabe/No contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Promedio notas
-Pregunta: `r names(datos[,110])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(110,110,138,264,139,265,c("Su promedio de notas son mayores a 8", "Su promedio de notas se encuentra entre 6 y 8", "Su promedio de notas se encuentra entre 4 y 6", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Nivel estudios encuestado
-Pregunta: `r names(datos[,111])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "FormaciÃ³n personal", "Universitarios", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Acceso internet
-Pregunta: `r names(datos[,112])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(112,112,138,264,139,265,c("SÃ­", "No", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-### VehÃ­culo
-Pregunta: `r names(datos[,113])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
-
-### Licencias
-Pregunta: `r names(datos[,114])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "MÃ¡s de dos", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
- mosaic.a(plot)
-```
-
-### Ingreso
-Pregunta: `r names(datos[,115])`
-
-```{r echo=FALSE, warning=FALSE}
-plot<- graficos(115,115,138,264,139,265,c("Ninguno","< 399", "400 - 799", "800 - 1199", "1200 - 1599", "1600 - 1999", "2000 - 2399","2400 - 2799", "2800 - 3199",  "> 3200", "No sabe/no contesta"), 40, 100)
-ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1))
-mosaic.a(plot)
-```
+<!-- ### Ir en bicileta a la escuela  {.tabset .tabset-fade} -->
+
+<!-- #### Solo/a -->
+<!-- Pregunta: `r names(datos[,58])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(58,58,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Con menores -->
+<!-- Pregunta: `r names(datos[,59])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(59,59,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Con adultos -->
+<!-- Pregunta: `r names(datos[,60])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(60,60,138,264,139,265,c(names(table(datos[,55]))[2], "8 - 9 años","10 - 11 años","12 - 13 años", "14 - 15 años", "16 - 17 años" , names(table(datos[,55]))[1],"No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ## 6. Preocupación en caminar y bicicleta {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ¿Qué tanto le preocuparían estas situaciones con respecto a que su hijo camine o vaya en bicicleta a la escuela? -->
+
+<!-- ### Situaciones Generales  {.tabset .tabset-fade} -->
+
+<!-- #### Distancia -->
+<!-- Pregunta: `r names(datos[,62])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(62,62,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Tráfico -->
+<!-- Pregunta: `r names(datos[,63])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(63,63,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- #### Velocidad automóviles -->
+<!-- Pregunta: `r names(datos[,64])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(64,64,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Tiempo -->
+<!-- Pregunta: `r names(datos[,65])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(65,65,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Seguridad intersecciones -->
+<!-- Pregunta: `r names(datos[,66])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(66,66,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Presencia de polícias -->
+<!-- Pregunta: `r names(datos[,67])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(67,67,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Violencia -->
+<!-- Pregunta: `r names(datos[,68])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(68,68,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Frio/calor -->
+<!-- Pregunta: `r names(datos[,69])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(69,69,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Lluvia -->
+<!-- Pregunta: `r names(datos[,70])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(70,70,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Peso mochila -->
+<!-- Pregunta: `r names(datos[,71])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(71,71,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Sobre caminar  {.tabset .tabset-fade} -->
+
+<!-- #### Ausencia adultos -->
+<!-- Pregunta: `r names(datos[,72])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(72,72,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Veredas mal estado -->
+<!-- Pregunta: `r names(datos[,73])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(73,73,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Ausencia niños -->
+<!-- Pregunta: `r names(datos[,74])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(74,74,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Aburrimiento -->
+<!-- Pregunta: `r names(datos[,75])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(75,75,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Sobre biclicleta  {.tabset .tabset-fade} -->
+
+<!-- #### Ausencia adultos -->
+<!-- Pregunta: `r names(datos[,76])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(76,76,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Ausencia de ciclovias -->
+<!-- Pregunta: `r names(datos[,77])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(77,77,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Espacio para bicicleta -->
+<!-- Pregunta: `r names(datos[,78])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(78,78,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Ausencia niños -->
+<!-- Pregunta: `r names(datos[,79])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(79,79,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Aburrimiento -->
+<!-- Pregunta: `r names(datos[,80])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(80,80,138,264,139,265,c("Mucho", "Regular", "Poco", "Nada","No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Mejora de situaciones al caminar o bicicleta {.tabset .tabset-fade} -->
+
+<!-- Si las siguientes situaciones mejoran ¿dejaría a su hijo/a ir caminando o en bicicleta a la escuela? -->
+
+<!-- #### Distancia -->
+<!-- Pregunta: `r names(datos[,82])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(82,82,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Tráfico -->
+<!-- Pregunta: `r names(datos[,83])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(83,83,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Intersecciones -->
+<!-- Pregunta: `r names(datos[,84])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(84,84,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Violencia -->
+<!-- Pregunta: `r names(datos[,85])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(85,85,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Cantidad de personas -->
+<!-- Pregunta: `r names(datos[,86])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(86,86,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Veredas -->
+<!-- Pregunta: `r names(datos[,87])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(87,87,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Ciclovias -->
+<!-- Pregunta: `r names(datos[,88])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(88,88,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+
+<!-- #### Dejar bicicletas -->
+<!-- Pregunta: `r names(datos[,89])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(89,89,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Cantidad niños -->
+<!-- Pregunta: `r names(datos[,90])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(90,90,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ## 7. Entorno de las escuelas {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ### Barrio de las escuelas {.tabset .tabset-fade} -->
+
+<!-- De las siguientes afirmaciones sobre el barrio alrededor de la escuela, marque solo una opción de qué tan de acuerdo está con ellas -->
+
+<!-- #### Ayuda de vecinos -->
+<!-- Pregunta: `r names(datos[,92])` -->
+
+<!-- ```{r} -->
+<!-- plot<- graficos(92,92,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Cuidado de niños -->
+<!-- Pregunta: `r names(datos[,93])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(93,93,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Confianza -->
+<!-- Pregunta: `r names(datos[,94])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(94,94,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Saludos -->
+<!-- Pregunta: `r names(datos[,95])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(95,95,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Ambiente agradable -->
+<!-- Pregunta: `r names(datos[,96])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(96,96,138,264,139,265,c("No conozco el barrio a los vecinos", "Muy en desacuerdo","Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Realidad en el entorno de la escuela {.tabset .tabset-fade} -->
+<!-- Responda y marque la opción que más refleje la realidad de la zona alrededor de la escuela -->
+
+<!-- #### Limpieza -->
+<!-- Pregunta: `r names(datos[,98])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(98,98,138,264,139,265,c("Ninguno", "Casi nada", "Pocos",  "Muchos", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- #### Arboles -->
+<!-- Pregunta: `r names(datos[,99])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(99,99,138,264,139,265,c("Ninguno", "Casi nada", "Pocos",  "Muchos", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ## 8. Percepción final {.tabset .tabset-fade .tabset-pills} -->
+<!-- ¿Qué tan de acuerdo está usted con las siguientes expresiones? -->
+
+<!-- ### Riesgos cardiovasculares -->
+<!-- Pregunta: `r names(datos[,101])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(101,101,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Obesidad -->
+<!-- Pregunta: `r names(datos[,102])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(102,102,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Contaminación ambiental -->
+<!-- Pregunta: `r names(datos[,103])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(103,103,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Tráfico y congestión -->
+<!-- Pregunta: `r names(datos[,104])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(104,104,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Aptitudes académicas -->
+<!-- Pregunta: `r names(datos[,105])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(105,105,138,264,139,265,c("Muy en desacuerdo", "Algo en desacuerdo", "Algo de acuerdo", "Muy de acuerdo", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- # mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ## 9. Información socio-económica {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ### Enfermedad respiratoria -->
+<!-- Pregunta: `r names(datos[,106])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(106,106,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Condición de salud -->
+<!-- Pregunta: `r names(datos[,108])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(108,108,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Condición de visión -->
+<!-- Pregunta: `r names(datos[,109])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(109,109,138,264,139,265,c("Sí", "No", "No sabe/No contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Promedio notas -->
+<!-- Pregunta: `r names(datos[,110])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(110,110,138,264,139,265,c("Su promedio de notas son mayores a 8", "Su promedio de notas se encuentra entre 6 y 8", "Su promedio de notas se encuentra entre 4 y 6", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Nivel estudios encuestado -->
+<!-- Pregunta: `r names(datos[,111])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(111,111,138,264,139,265,c("Sin estudios", "Primaria","Secundaria", "Formación personal", "Universitarios", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Acceso internet -->
+<!-- Pregunta: `r names(datos[,112])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(112,112,138,264,139,265,c("Sí", "No", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Vehículo -->
+<!-- Pregunta: `r names(datos[,113])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(113,113,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Licencias -->
+<!-- Pregunta: `r names(datos[,114])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(114,114,138,264,139,265,c("Ninguno", "Uno", "Dos", "Más de dos", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!--  mosaic.a(plot) -->
+<!-- ``` -->
+
+<!-- ### Ingreso -->
+<!-- Pregunta: `r names(datos[,115])` -->
+
+<!-- ```{r echo=FALSE, warning=FALSE} -->
+<!-- plot<- graficos(115,115,138,264,139,265,c("Ninguno","< 399", "400 - 799", "800 - 1199", "1200 - 1599", "1600 - 1999", "2000 - 2399","2400 - 2799", "2800 - 3199",  "> 3200", "No sabe/no contesta"), 40, 100) -->
+<!-- ggplotly(plot[[2]])%>% layout(legend = list(orientation = "l", x = 1.1)) -->
+<!-- mosaic.a(plot) -->
+<!-- ``` -->
 
 
