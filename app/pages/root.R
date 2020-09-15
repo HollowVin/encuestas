@@ -1,8 +1,6 @@
-library(shiny.router)
-
-root_page <- fluidPage(
+root_ui <- fluidPage(
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Root Faithful Geyser Data"),
   
   # Sidebar with a slider input for number of bins
   sidebarLayout(

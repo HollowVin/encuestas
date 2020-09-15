@@ -1,11 +1,14 @@
 library(shiny.router)
 
-source("app/pages/root.R")
-source("app/pages/home.R")
+PAGES_PATH <- "app/pages/"
+pages <- list.files(path = PAGES_PATH, pattern = ".R$")
+for (page in pages) {
+  page_path <- paste(PAGES_PATH, page, sep = "")
+  source(page_path)
+}
 
 router_ui <- router_ui()
-
 router <- make_router(
-  route("/", root_page, root_server),
-  route("home", home_page, home_server)
+  route("/", root_ui, root_server),
+  route("home", home_ui, home_server)
 )
