@@ -10,7 +10,6 @@
 library(shiny)
 source("app/router.R")
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
     router_ui()
 ))
