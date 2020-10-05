@@ -8,8 +8,10 @@
 #
 
 library(shiny)
+library(readxl)
 source("app/router.R")
 
 shinyServer(function(input, output, session) {
     router(input, output, session)
+    session$userData$data <- read_excel("data/RESULTADOS ENCUESTA A PADRES.xlsx")
 })
