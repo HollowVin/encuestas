@@ -1,5 +1,5 @@
-home_ui <- fluidPage(
-  titlePanel("Histograma"),
+barplot_ui <- fluidPage(
+  titlePanel("Histograma/Gráfico de barras"),
 
   sidebarLayout(
     sidebarPanel(
@@ -23,7 +23,7 @@ home_ui <- fluidPage(
   )
 )
 
-home_server <- function(input, output, session) {
+barplot_server <- function(input, output, session) {
   updateSelectizeInput(
     session,
     "plotColumn",

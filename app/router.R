@@ -10,5 +10,5 @@ for (page in pages) {
 router_ui <- router_ui()
 router <- make_router(
   route("/", root_ui, root_server),
-  route("home", home_ui, home_server)
+  route("barplot", barplot_ui, barplot_server)
 )
