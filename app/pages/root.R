@@ -72,7 +72,10 @@ root_ui <- navbarPage(
   "Analizador de Datos de Encuestas",
   tabPanel("Inicio", .start_ui),
   tabPanel("Acerca De CEPRA-RES", .about_ui),
-  tabPanel("Gráficos", a("Barplots", href = "/#!/barplot", target = "_blank"))
+  tabPanel("Gráficos",
+           a("Barplots", href = "/#!/barplot", target = "_blank"),
+           a("Mosaic plots", href = "/#!/mosaic_plot", target = "_blank")
+  )
 )
 
 root_server <- function(input, output, session) {
