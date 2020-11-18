@@ -1,10 +1,3 @@
-.start_ui <- fluidPage(
-  "La aplicación ya cuenta con datos de la encuesta CEPRA RES.",
-  "Si desea ingresar sus propios datos, puede hacerlo mediante la siguiente área de texto",
-  textAreaInput("dataInput", "Ingreso de datos"),
-  submitButton("Ingresar datos")
-)
-
 .about_ui <- fluidPage(
   h2("Proyecto"),
   "Evaluación de entornos urbanos peatonales para la identificación de rutas escolares seguras en ciudades intermedias del Ecuador, 2020.",
@@ -70,7 +63,6 @@
 
 root_ui <- navbarPage(
   "Analizador de Datos de Encuestas",
-  tabPanel("Inicio", .start_ui),
   tabPanel("Acerca De CEPRA-RES", .about_ui),
   tabPanel("Gráficos",
            a("Barplots", href = "/#!/barplot", target = "_blank"),
@@ -79,5 +71,4 @@ root_ui <- navbarPage(
 )
 
 root_server <- function(input, output, session) {
-  session$userData$data <- read_excel("data/RESULTADOS ENCUESTA A PADRES.xlsx")
 }
