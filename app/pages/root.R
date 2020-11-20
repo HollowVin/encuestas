@@ -64,9 +64,7 @@
 root_ui <- navbarPage(
   "Analizador de Datos de Encuestas",
   tabPanel("Acerca De CEPRA-RES", .about_ui),
-  tabPanel("Gráficos",
-           a("Barplots", href = "/#!/barplot", target = "_blank"),
-           a("Mosaic plots", href = "/#!/mosaic_plot", target = "_blank")
+  tabPanel("Gráficos", a("Gráficos", href = "/#!/plots")
   )
 )
 

@@ -10,6 +10,5 @@ for (page in pages) {
 router_ui <- router_ui()
 router <- make_router(
   route("/", root_ui, root_server),
-  route("barplot", barplot_ui, barplot_server),
-  route("mosaic_plot", mosaic_plot_ui, mosaic_plot_server)
+  route("plots", plots_ui, plots_server)
 )
