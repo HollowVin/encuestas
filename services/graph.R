@@ -1,4 +1,6 @@
 library(ggplot2)
+library(ggmosaic)
+library(vcd)
 library(viridis)
 
 filter_data <- function(data, variable, value) {
@@ -175,4 +177,26 @@ barplot.4 <- function(datos, col.1, col.2, col.3, col.4, qualitative = TRUE, fil
         facet_grid(var3 ~ var2)
     )
   }
+}
+
+mosaic.plot <- function(datos, col.1, col.2, na.values = "-") {
+  datos.tmp <- datos[,c(col.1, col.2)]
+  names(datos.tmp) <- c("var1", "var2")
+  
+  datos.tmp$var1[is.na(datos.tmp$var1)] <- na.values
+  datos.tmp$var1 <- factor(datos.tmp$var1, ordered = TRUE)
+  datos.tmp$var2[is.na(datos.tmp$var2)] <- na.values
+  datos.tmp$var2 <- factor(datos.tmp$var2, ordered = TRUE)
+  
+  SD<- structable(var1 ~ var2, data = datos.tmp)
+  mosaic(SD, shade = TRUE,
+         labeling = labeling_values,#,labeling_residuals
+         split_vertical = c(TRUE, FALSE),
+         spacing = spacing_dimequal(c(0.3,0.3)),
+         labeling_args = list(abbreviate_labs = 12,
+                              gp_labels = gpar(fontsize = 8),
+                              varnames=c(FALSE,FALSE),
+                              rot_labels=c(0,0,90,0),
+                              just_labels = c("left", "right")))
+  #ggplot(datos.tmp) + geom_mosaic(aes(x = product(var1, var2), fill = var1))
 }

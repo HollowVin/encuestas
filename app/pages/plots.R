@@ -45,10 +45,14 @@ source("services/graph.R")
   titlePanel("Gráfico de mosaico"),
   
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      selectInput("mosaicFirstVariable", "Primera variable", vector()),
+      selectInput("mosaicSecondVariable", "Segunda variable", vector()),
+      width = 3
+    ),
     
     mainPanel(
-      plotlyOutput("mosaicPlot", height = "100vh"),
+      plotOutput("mosaicPlot", height = "100vh"),
       width = 9
     )
   )
@@ -90,6 +94,8 @@ plots_server <- function(input, output, session) {
     updateSelectizeInput(session, "thirdVariable", choices = c(emptyColumn, names(values$data)))
     updateSelectizeInput(session, "fourthVariable", choices = c(emptyColumn, names(values$data)))
     updateSelectizeInput(session, "filterVariable", choices = c(emptyColumn, names(values$data)))
+    updateSelectizeInput(session, "mosaicFirstVariable", choices = names(values$data))
+    updateSelectizeInput(session, "mosaicSecondVariable", choices = names(values$data))
   })
 
   output$barPlot <- renderPlotly({
@@ -108,5 +114,13 @@ plots_server <- function(input, output, session) {
     } else {
       barplot.1(x, input$mainVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     }
+  })
+  
+  output$mosaicPlot <- renderPlot({
+    x <- values$data
+    na.values <- "No sabe/No contesta"
+    req(input$mosaicFirstVariable, input$mosaicSecondVariable)
+    
+    mosaic.plot(x, input$mosaicFirstVariable, input$mosaicSecondVariable, na.values = na.values)
   })
 }
