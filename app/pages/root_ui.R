@@ -1,5 +1,29 @@
-.about_ui <- fluidPage(
-  h2("Proyecto"),
+.about_project_ui <- fluidPage(
+  h2("Proyecto de titulación"),
+  tags$p(
+    tags$strong("Autor: "),
+    tags$span("Juan Corral"),
+  ),
+  tags$p(
+    tags$strong("Directora de tesis: "),
+    tags$span("Agrim. Daniela Elisabet Ballari")
+  ),
+  tags$p(
+    tags$strong("Tribunal de tesis: "),
+    tags$span("Ing. Andrés Patiño León e Ing. Chester Sellers Walden"),
+  ),
+  tags$p(
+    "El proyecto de Análisis y desarrollo de aplicación web para el análisis estadístico de
+     datos de encuestas es un proyecto realizado como trabajo de graduación para la
+     carrera de Ingeniería de Sistemas y Telemática en la Universidad del Azuay."
+  ),
+  tags$img(
+    href = "", alt = "placeholder UDA"
+  ),
+)
+
+.about_cepra_ui <- fluidPage(
+  h2("Proyecto de CEPRA-RES"),
   "Evaluación de entornos urbanos peatonales para la identificación de rutas escolares seguras en ciudades intermedias del Ecuador, 2020.",
   
   h2("Financiadores"),
@@ -63,10 +87,8 @@
 
 root_ui <- navbarPage(
   "Analizador de Datos de Encuestas",
-  tabPanel("Acerca De CEPRA-RES", .about_ui),
+  tabPanel("Acerca de este proyecto", .about_project_ui),
+  tabPanel("Acerca De CEPRA-RES", .about_cepra_ui),
   tabPanel("Gráficos", a("Gráficos", href = "/#!/plots")
   )
 )
-
-root_server <- function(input, output, session) {
-}

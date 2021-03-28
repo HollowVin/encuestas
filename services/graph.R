@@ -189,7 +189,7 @@ mosaic.plot <- function(datos, col.1, col.2, na.values = "-") {
   datos.tmp$var2 <- factor(datos.tmp$var2, ordered = TRUE)
   
   SD<- structable(var1 ~ var2, data = datos.tmp)
-  mosaic(SD, shade = TRUE,
+  vcd::mosaic(SD, shade = TRUE,
          labeling = labeling_values,#,labeling_residuals
          split_vertical = c(TRUE, FALSE),
          spacing = spacing_dimequal(c(0.3,0.3)),

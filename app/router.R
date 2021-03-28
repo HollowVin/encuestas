@@ -1,7 +1,7 @@
 library(shiny.router)
 
 PAGES_PATH <- "app/pages/"
-pages <- list.files(path = PAGES_PATH, pattern = ".R$")
+pages <- list.files(path = PAGES_PATH, pattern = ".R$", recursive = TRUE)
 for (page in pages) {
   page_path <- paste(PAGES_PATH, page, sep = "")
   source(page_path)
