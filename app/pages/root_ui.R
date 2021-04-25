@@ -1,4 +1,5 @@
 .about_project_ui <- fluidPage(
+  theme = bs_theme(version = 4, bootswatch = "minty"),
   h2("Proyecto de titulación"),
   tags$p(
     tags$strong("Autor: "),
@@ -86,6 +87,7 @@
 )
 
 root_ui <- navbarPage(
+  theme = bs_theme(version = 4, bootswatch = "minty"),
   "Analizador de Datos de Encuestas",
   tabPanel("Acerca de este proyecto", .about_project_ui),
   tabPanel("Acerca De CEPRA-RES", .about_cepra_ui),

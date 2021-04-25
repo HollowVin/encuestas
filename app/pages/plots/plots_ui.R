@@ -1,6 +1,7 @@
 library(shinyFeedback)
 
 .data_ui <- fluidPage(
+  theme = bs_theme(version = 4, bootswatch = "minty"),
   useShinyFeedback(),
   titlePanel("Manejo de datos"),
   fluidRow(
@@ -15,6 +16,7 @@ library(shinyFeedback)
 )
 
 .barplot_tab_ui <- fluidPage(
+  theme = bs_theme(version = 4, bootswatch = "minty"),
   titlePanel("Histograma/Gráfico de barras"),
   
   sidebarLayout(
@@ -38,6 +40,7 @@ library(shinyFeedback)
 )
 
 .mosaic_plot_ui <- fluidPage(
+  theme = bs_theme(version = 4, bootswatch = "minty"),
   titlePanel("Gráfico de mosaico"),
   
   sidebarLayout(
