@@ -4,6 +4,8 @@ library(readr)
 library(shinyFeedback)
 source("services/graph.R")
 
+.data_file_name <- "data/Datos Concatenados.xlsx"
+
 .data_ui <- fluidPage(
   useShinyFeedback(),
   titlePanel("Manejo de datos"),
@@ -83,7 +85,7 @@ plots_ui <- navbarPage(
 
 plots_server <- function(input, output, session) {
   values <- reactiveValues(
-    data = read_excel("data/RESULTADOS ENCUESTA A PADRES.xlsx")
+    data = read_excel(.data_file_name)
   )
   
   observeEvent(input$file, {
@@ -97,7 +99,7 @@ plots_server <- function(input, output, session) {
   })
   
   observeEvent(input$reset, {
-    values$data <- read_excel("data/RESULTADOS ENCUESTA A PADRES.xlsx")
+    values$data <- read_excel(.data_file_name)
   })
 
   output$tableData <- renderTable({values$data}, striped = TRUE, hover = TRUE, bordered = TRUE, spacing = "xs", width = "100%")
