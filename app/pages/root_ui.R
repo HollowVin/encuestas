@@ -91,6 +91,6 @@ root_ui <- navbarPage(
   "Analizador de Datos de Encuestas",
   tabPanel("Acerca de este proyecto", .about_project_ui),
   tabPanel("Acerca De CEPRA-RES", .about_cepra_ui),
-  tabPanel("Gráficos", a("Gráficos", href = "/#!/plots")
+  tabPanel("Gráficos", a("Gráficos", href = route_link("plots"))
   )
 )
