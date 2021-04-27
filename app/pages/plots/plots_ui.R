@@ -5,19 +5,19 @@ library(shinyFeedback)
   useShinyFeedback(),
   titlePanel("Manejo de datos"),
   fluidRow(
-    tags$p("La aplicaci贸n ya cuenta con datos de la encuesta CEPRA RES. Si desea usar sus propios datos, puede subir un archivo con el siguiente boton", style = "padding-left: 15px"),
+    tags$p("La aplicaci髇 ya cuenta con datos de la encuesta CEPRA RES. Si desea usar sus propios datos, puede subir un archivo con el siguiente bot髇", style = "padding-left: 15px"),
   ),
   fluidRow(
     column(3, fileInput("file", "Subir datos", accept = c(".csv", ".xls", ".xlsx"), buttonLabel = "Elegir archivo...")),
     column(4, actionButton("reset", "Volver a datos de CEPRA-RES", class = "btn-warning float-left", style = "margin-top: 25px")),
   ),
-  tags$label("Visualizaci贸n de datos actuales"),
+  tags$label("Visualizaci髇 de datos actuales"),
   tableOutput("tableData"),
 )
 
 .barplot_tab_ui <- fluidPage(
   theme = bs_theme(version = 4, bootswatch = "minty"),
-  titlePanel("Histograma/Gr谩fico de barras"),
+  titlePanel("Histograma/Gr醘ico de barras"),
   
   sidebarLayout(
     sidebarPanel(
@@ -48,22 +48,22 @@ library(shinyFeedback)
       selectInput("mosaicFirstVariable", "Primera variable", vector()),
       selectInput("mosaicSecondVariable", "Segunda variable", vector()),
       tags$p(
-        tags$strong("Interpretaci贸n del mosaico: "), 
-        tags$span("El tama帽o de los cuadros es proporcional 
-          al n煤mero de registros. Los cuadros coloreados en azul significan 
-          que contienen m谩s registros que los esperados bajo la hip贸tesis nula 
+        tags$strong("Interpretaci髇 del mosaico: "), 
+        tags$span("El tama駉 de los cuadros es proporcional 
+          al n鷐ero de registros. Los cuadros coloreados en azul significan 
+          que contienen m醩 registros que los esperados bajo la hip髏esis nula 
           de independencia. Los cuadros en rojo significan que han habido menos 
           registros que los esperados. Es decir, los cuadros coloredos muestran 
           asociaciones o dependiencias (positivas o negativas) entre las 
-          categor铆as."),
+          categor韆s."),
         style = "color: gray"
       ),
       tags$br(),
-      tags$p("En este caso, las categor铆as Caminando, Buseta Escolar, Bus Escolar y 
-        Bus P煤blico, son dependientes de la ciudad de Cuenca e Ibarra. Es decir, 
-        para Cuenca, se observa una asociaci贸n positiva entre las categorias 
-        Caminando y Buseta Escolar y negataiva con bus p煤blico. Mientras que 
-        para Ibarra, se observa una asociaci贸n postiva con Bus P煤blico y 
+      tags$p("En este caso, las categor韆s Caminando, Buseta Escolar, Bus Escolar y 
+        Bus P鷅lico, son dependientes de la ciudad de Cuenca e Ibarra. Es decir, 
+        para Cuenca, se observa una asociaci髇 positiva entre las categor韆s 
+        Caminando y Buseta Escolar y negataiva con bus p鷅lico. Mientras que 
+        para Ibarra, se observa una asociaci髇 postiva con Bus P鷅lico y 
         negativa con Caminando.", style = "color: gray")
     ),
     
@@ -74,7 +74,7 @@ library(shinyFeedback)
 )
 
 plots_ui <- navbarPage(
-  "Datos y graficacion",
+  "Datos y graficaci髇",
   tabPanel("Datos", .data_ui),
   tabPanel("Barplot", .barplot_tab_ui),
   tabPanel("Mosaic Plot", .mosaic_plot_ui)
