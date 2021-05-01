@@ -9,6 +9,7 @@
 
 library(shiny)
 library(bslib)
+library(shinydashboard)
 source("app/router.R")
 
 shinyUI(fluidPage(

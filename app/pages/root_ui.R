@@ -1,5 +1,4 @@
 .about_project_ui <- fluidPage(
-  theme = bs_theme(version = 4, bootswatch = "minty"),
   h2("Proyecto de titulación"),
   tags$p(
     tags$strong("Autor: "),
@@ -86,11 +85,20 @@
   )
 )
 
-root_ui <- navbarPage(
-  theme = bs_theme(version = 4, bootswatch = "minty"),
-  "Analizador de Datos de Encuestas",
-  tabPanel("Acerca de este proyecto", .about_project_ui),
-  tabPanel("Acerca De CEPRA-RES", .about_cepra_ui),
-  tabPanel("Gráficos", a("Gráficos", href = route_link("plots"))
+root_ui <- dashboardPage(
+  dashboardHeader(title = "Analizador de Datos de Encuestas"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Acerca del proyecto", tabName = "project", icon = icon("book")),
+      menuItem("Acerca De CEPRA-RES", tabName = "cepra", icon = icon("id-card")),
+      menuItem("Gráficos", tabName = "graphs", icon = icon("chart-area"))
+    )
+  ),
+  dashboardBody(
+    tabItems(
+      tabItem(tabName = "project", .about_project_ui),
+      tabItem(tabName = "cepra", .about_cepra_ui),
+      tabItem(tabName = "graphs", a("Gráficos", href = route_link("plots")))
+    ),
   )
 )
