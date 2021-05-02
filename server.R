@@ -8,8 +8,18 @@
 #
 
 library(shiny)
-source("app/router.R")
+library(readxl)
+library(readr)
+library(shinyFeedback)
+source("services/graph.R")
+
+CONTROLLERS_PATH <- "app/controllers/"
+controllers <- list.files(path = CONTROLLERS_PATH, pattern = "_controller.R$", recursive = TRUE)
+for (controller in controllers) {
+  controller_path <- paste(CONTROLLERS_PATH, controller, sep = "")
+  source(controller_path)
+}
 
 shinyServer(function(input, output, session) {
-    router(input, output, session)
+  graph_controller(input, output, session)
 })

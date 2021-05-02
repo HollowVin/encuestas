@@ -1,12 +1,6 @@
-library(plotly)
-library(readxl)
-library(readr)
-library(shinyFeedback)
-source("services/graph.R")
-
 .data_file_name <- "data/Datos Concatenados.xlsx"
 
-plots_server <- function(input, output, session) {
+graph_controller <- function(input, output, session) {
   values <- reactiveValues(
     data = read_excel(.data_file_name)
   )
@@ -24,7 +18,7 @@ plots_server <- function(input, output, session) {
   observeEvent(input$reset, {
     values$data <- read_excel(.data_file_name)
   })
-
+  
   output$tableData <- renderDataTable({values$data})
   
   emptyColumn <- "__(N/A)__"
@@ -38,14 +32,14 @@ plots_server <- function(input, output, session) {
     updateSelectizeInput(session, "mosaicFirstVariable", choices = names(values$data))
     updateSelectizeInput(session, "mosaicSecondVariable", choices = names(values$data))
   })
-
+  
   output$barPlot <- renderPlotly({
     x <- values$data
     qualitative <- input$mainVariableType == "Cualitativo"
     na.values <- "No sabe/No contesta"
     filter_variable <- ifelse(input$filterVariable != emptyColumn, input$filterVariable, NA)
     filter_value <- ifelse(input$filterValue != "", input$filterValue, NA)
-
+    
     if (input$fourthVariable != emptyColumn && input$thirdVariable != emptyColumn && input$secondVariable != emptyColumn) {
       barplot.4(x, input$mainVariable, input$secondVariable, input$thirdVariable, input$fourthVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     } else if (input$thirdVariable != emptyColumn && input$secondVariable != emptyColumn) {
