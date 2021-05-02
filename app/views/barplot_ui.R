@@ -1,3 +1,5 @@
+require(plotly)
+
 .barplot_ui <- fluidRow(
   box(
     tabBox(
