@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinyFeedback)
 library(shinydashboard)
 library(shinyjs)
 
