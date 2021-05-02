@@ -2,7 +2,7 @@
   h2("Proyecto de titulación"),
   tags$p(
     tags$strong("Autor: "),
-    tags$span("Juan Corral"),
+    tags$span("Ana Corral"),
   ),
   tags$p(
     tags$strong("Directora de tesis: "),
@@ -89,12 +89,14 @@ root_ui <- dashboardPage(
   dashboardHeader(title = "Analizador de Datos de Encuestas"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Acerca del proyecto", tabName = "project", icon = icon("book")),
+      menuItem("Acerca del proyecto", tabName = "project", icon = icon("book"), selected = TRUE),
       menuItem("Acerca De CEPRA-RES", tabName = "cepra", icon = icon("id-card")),
       menuItem("Gráficos", tabName = "graphs", icon = icon("chart-area"))
-    )
+    ),
+    width = 200
   ),
   dashboardBody(
+    # shinyDashboardThemes(theme = "onenote"),
     tabItems(
       tabItem(tabName = "project", .about_project_ui),
       tabItem(tabName = "cepra", .about_cepra_ui),

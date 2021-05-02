@@ -2,7 +2,6 @@ library(shinyFeedback)
 
 .data_ui <- fluidPage(
   useShinyFeedback(),
-  titlePanel("Manejo de datos"),
   fluidRow(
     tags$p("La aplicación ya cuenta con datos de la encuesta CEPRA RES. Si desea usar sus propios datos, puede subir un archivo con el siguiente botón", style = "padding-left: 15px"),
   ),
@@ -11,12 +10,10 @@ library(shinyFeedback)
     column(4, actionButton("reset", "Volver a datos de CEPRA-RES", class = "btn-warning float-left", style = "margin-top: 25px")),
   ),
   tags$label("Visualización de datos actuales"),
-  tableOutput("tableData"),
+  dataTableOutput("tableData"),
 )
 
 .barplot_tab_ui <- fluidPage(
-  titlePanel("Histograma/Gráfico de barras"),
-  
   sidebarLayout(
     sidebarPanel(
       selectInput("mainVariable", "Columna a graficar", vector()),
@@ -38,8 +35,6 @@ library(shinyFeedback)
 )
 
 .mosaic_plot_ui <- fluidPage(
-  titlePanel("GrÃ¡fico de mosaico"),
-  
   sidebarLayout(
     sidebarPanel(
       selectInput("mosaicFirstVariable", "Primera variable", vector()),
@@ -70,9 +65,24 @@ library(shinyFeedback)
   )
 )
 
-plots_ui <- navbarPage(
-  "Datos y graficación",
-  tabPanel("Datos", .data_ui),
-  tabPanel("Barplot", .barplot_tab_ui),
-  tabPanel("Mosaic Plot", .mosaic_plot_ui)
+plots_ui <- dashboardPage(
+  dashboardHeader(title = "Gráficos"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Datos", tabName = "data", icon = icon("database"), selected = TRUE),
+      menuItem("Gráfico Barras", tabName = "bars", icon = icon("chart-bar")),
+      menuItem("Gráfico Mosaico", tabName = "mosaic", icon = icon("table"))
+    )
+  ),
+  dashboardBody(
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "table.css")
+    ),
+    # shinyDashboardThemes(theme = "onenote"),
+    tabItems(
+      tabItem(tabName = "data", .data_ui),
+      tabItem(tabName = "bars", .barplot_tab_ui),
+      tabItem(tabName = "mosaic", .mosaic_plot_ui)
+    )
+  )
 )

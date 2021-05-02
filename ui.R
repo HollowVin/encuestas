@@ -8,10 +8,8 @@
 #
 
 library(shiny)
-library(bslib)
 library(shinydashboard)
+library(dashboardthemes)
 source("app/router.R")
 
-shinyUI(fluidPage(
-    router_ui()
-))
+shinyUI(router_ui())
