@@ -18,3 +18,7 @@
 #aboutLinks {
   margin-top: 5px;
 }
+
+.btn-primary, .btn-warning {
+  color: white;
+}
