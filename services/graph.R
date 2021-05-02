@@ -169,8 +169,8 @@ barplot.4 <- function(datos, col.1, col.2, col.3, col.4, qualitative = TRUE, bin
   {
     viridis <- colors(color)
     return(
-      ggplot(datos.tmp, aes(x = as.numeric(var1))) +
-        geom_histogram(bins = bins) +
+      ggplot(datos.tmp, aes(x = as.numeric(var1), color = var4, alpha = 0.3)) +
+        geom_histogram(bins = bins, fill = "white", alpha = 0.5, position="identity") +
         scale_fill_gradient(low = viridis[1], high = viridis[2]) +
         theme(axis.text.x = element_text(angle = 90)) + labs(x = "", y = "%") +
         guides(fill = guide_legend(title = "")) +

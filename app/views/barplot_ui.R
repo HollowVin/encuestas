@@ -8,21 +8,18 @@
         textInput("bins", "Número de barras", value = "8", placeholder = "N° de barras para el histograma")
       ),
       tabPanel(
-        "2. Filtrado",
-        selectInput("filterVariable", "Columna de filtrado", vector()),
-        textInput("filterValue", "Valor de filtrado")
-      ),
-      tabPanel(
-        "3. Facetas",
+        "2. Facetas",
         selectInput("secondVariable", "Columna de faceta horizontal", vector()),
         selectInput("thirdVariable", "Columna de faceta vertical", vector())
       ),
       tabPanel(
-        "4. Color",
+        "3. Color",
         selectInput("fourthVariable", "Columna de rellenado de color", vector())
       ),
       tabPanel(
         "Otros",
+        selectInput("filterVariable", "Columna de filtrado", vector()),
+        textInput("filterValue", "Valor de filtrado"),
         selectInput("barColor", "Paleta de color", choices = c("Magma" = "A", "Inferno" = "B", "Plasma" = "C", "Viridis" = "D", "Cividis" = "E"))
       ),
       tags$p(
