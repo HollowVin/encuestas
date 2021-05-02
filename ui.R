@@ -31,6 +31,9 @@ shinyUI(
       )
     ),
     dashboardBody(
+      tags$head(
+        tags$link(rel = "stylesheet", type = "text/css", href = "table.css")
+      ),
       tabItems(
         tabItem(tabName = "home", "Test"),
         tabItem(tabName = "data", .data_ui),

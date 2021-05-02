@@ -196,7 +196,7 @@ mosaic.plot <- function(datos, col.1, col.2, na.values = "-") {
          labeling_args = list(abbreviate_labs = 12,
                               gp_labels = gpar(fontsize = 8),
                               varnames=c(FALSE,FALSE),
-                              rot_labels=c(0,0,90,0),
+                              rot_labels=c(90,0,90,0),
                               just_labels = c("left", "right")))
   #ggplot(datos.tmp) + geom_mosaic(aes(x = product(var1, var2), fill = var1))
 }
