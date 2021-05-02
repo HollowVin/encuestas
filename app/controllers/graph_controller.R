@@ -1,5 +1,6 @@
 library(readxl)
 library(readr)
+library(plotly)
 library(shinyFeedback)
 
 .data_file_name <- "data/Datos Concatenados.xlsx"
