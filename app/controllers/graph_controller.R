@@ -23,6 +23,10 @@ graph_controller <- function(input, output, session) {
     values$data <- read_excel(.data_file_name)
   })
   
+  observeEvent(input$mainVariableType, {
+    toggleState("bins", condition = input$mainVariableType == "Cuantitativo")
+  })
+  
   output$tableData <- renderDataTable({values$data})
   
   emptyColumn <- "__(N/A)__"
@@ -40,18 +44,25 @@ graph_controller <- function(input, output, session) {
   output$barPlot <- renderPlotly({
     x <- values$data
     qualitative <- input$mainVariableType == "Cualitativo"
+    if (!qualitative) {
+      condition <- strtoi(input$bins) > 0
+      feedbackWarning("bins", is.na(condition) || !condition, "Por favor ingrese un valor numérico mayor a 0")
+      req(condition)
+    }
+
+    bins <- strtoi(input$bins)
     na.values <- "No sabe/No contesta"
     filter_variable <- ifelse(input$filterVariable != emptyColumn, input$filterVariable, NA)
     filter_value <- ifelse(input$filterValue != "", input$filterValue, NA)
     
     if (input$fourthVariable != emptyColumn && input$thirdVariable != emptyColumn && input$secondVariable != emptyColumn) {
-      barplot.4(x, input$mainVariable, input$secondVariable, input$thirdVariable, input$fourthVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
+      barplot.4(x, input$mainVariable, input$secondVariable, input$thirdVariable, input$fourthVariable, qualitative = qualitative, bins = bins, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     } else if (input$thirdVariable != emptyColumn && input$secondVariable != emptyColumn) {
-      barplot.3(x, input$mainVariable, input$secondVariable, input$thirdVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
+      barplot.3(x, input$mainVariable, input$secondVariable, input$thirdVariable, qualitative = qualitative, bins = bins, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     } else if (input$secondVariable != emptyColumn) {
-      barplot.2(x, input$mainVariable, input$secondVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
+      barplot.2(x, input$mainVariable, input$secondVariable, qualitative = qualitative, bins = bins, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     } else {
-      barplot.1(x, input$mainVariable, qualitative = qualitative, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
+      barplot.1(x, input$mainVariable, qualitative = qualitative, bins = bins, filter_variable = filter_variable, filter_value = filter_value, na.values = na.values, color = input$barColor)
     }
   })
   

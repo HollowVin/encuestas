@@ -16,7 +16,7 @@ colors <- function(color) {
   return(c(palette[1], palette[length(palette)]))
 }
 
-barplot.1 <- function(datos, col.1, qualitative = TRUE, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
+barplot.1 <- function(datos, col.1, qualitative = TRUE, bins = 8, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
   filtered <- filter_data(datos, filter_variable, filter_value)
   datos.tmp <- filtered[,col.1]
   names(datos.tmp) <- c("var1")
@@ -45,7 +45,7 @@ barplot.1 <- function(datos, col.1, qualitative = TRUE, filter_variable = NA, fi
     viridis <- colors(color)
     return(
       ggplot(datos.tmp, aes(x = as.numeric(var1), fill = ..x..)) +
-        geom_histogram() +
+        geom_histogram(bins = bins) +
         scale_fill_gradient(low = viridis[1], high = viridis[2]) +
         theme(axis.text.x = element_text(angle = 90)) + labs(x = "") +
         guides(fill = guide_legend(title = ""))
@@ -53,7 +53,7 @@ barplot.1 <- function(datos, col.1, qualitative = TRUE, filter_variable = NA, fi
   }
 }
 
-barplot.2 <- function(datos, col.1, col.2, qualitative = TRUE, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
+barplot.2 <- function(datos, col.1, col.2, qualitative = TRUE, bins = 8, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
   filtered <- filter_data(datos, filter_variable, filter_value)
   datos.tmp <- filtered[,c(col.1, col.2)]
   names(datos.tmp) <- c("var1", "var2")
@@ -84,7 +84,7 @@ barplot.2 <- function(datos, col.1, col.2, qualitative = TRUE, filter_variable =
     viridis <- colors(color)
     return(
       ggplot(datos.tmp, aes(x = as.numeric(var1), fill = ..x..)) +
-        geom_histogram() +
+        geom_histogram(bins = bins) +
         scale_fill_gradient(low = viridis[1], high = viridis[2]) +
         theme(axis.text.x = element_text(angle = 90)) + labs(x = "", y = "%") +
         guides(fill = guide_legend(title = "")) +
@@ -93,7 +93,7 @@ barplot.2 <- function(datos, col.1, col.2, qualitative = TRUE, filter_variable =
   }
 }
 
-barplot.3 <- function(datos, col.1, col.2, col.3, qualitative = TRUE, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
+barplot.3 <- function(datos, col.1, col.2, col.3, qualitative = TRUE, bins = 8, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
   filtered <- filter_data(datos, filter_variable, filter_value)
   datos.tmp <- filtered[,c(col.1, col.2, col.3)]
   names(datos.tmp) <- c("var1", "var2", "var3")
@@ -126,7 +126,7 @@ barplot.3 <- function(datos, col.1, col.2, col.3, qualitative = TRUE, filter_var
     viridis <- colors(color)
     return(
       ggplot(datos.tmp, aes(x = as.numeric(var1), fill = ..x..)) +
-        geom_histogram() +
+        geom_histogram(bins = bins) +
         scale_fill_gradient(low = viridis[1], high = viridis[2]) +
         theme(axis.text.x = element_text(angle = 90)) + labs(x = "", y = "%") +
         guides(fill = guide_legend(title = "")) +
@@ -135,7 +135,7 @@ barplot.3 <- function(datos, col.1, col.2, col.3, qualitative = TRUE, filter_var
   }
 }
 
-barplot.4 <- function(datos, col.1, col.2, col.3, col.4, qualitative = TRUE, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
+barplot.4 <- function(datos, col.1, col.2, col.3, col.4, qualitative = TRUE, bins = 8, filter_variable = NA, filter_value = NA, na.values = "-", color = "D") {
   filtered <- filter_data(datos, filter_variable, filter_value)
   datos.tmp <- filtered[,c(col.1, col.2, col.3, col.4)]
   names(datos.tmp) <- c("var1", "var2", "var3", "var4")
@@ -170,7 +170,7 @@ barplot.4 <- function(datos, col.1, col.2, col.3, col.4, qualitative = TRUE, fil
     viridis <- colors(color)
     return(
       ggplot(datos.tmp, aes(x = as.numeric(var1))) +
-        geom_histogram() +
+        geom_histogram(bins = bins) +
         scale_fill_gradient(low = viridis[1], high = viridis[2]) +
         theme(axis.text.x = element_text(angle = 90)) + labs(x = "", y = "%") +
         guides(fill = guide_legend(title = "")) +

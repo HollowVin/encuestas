@@ -4,7 +4,8 @@
       tabPanel(
         "1. Básico",
         selectInput("mainVariable", "Columna a graficar", vector()),
-        radioButtons("mainVariableType", "Tipo de dato", choices = c("Cualitativo", "Cuantitativo"), selected = "Cualitativo")
+        radioButtons("mainVariableType", "Tipo de dato", choices = c("Cualitativo", "Cuantitativo"), selected = "Cualitativo"),
+        textInput("bins", "Número de barras", value = "8", placeholder = "N° de barras para el histograma")
       ),
       tabPanel(
         "2. Filtrado",

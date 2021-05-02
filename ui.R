@@ -9,6 +9,7 @@
 
 library(shiny)
 library(shinydashboard)
+library(shinyjs)
 
 VIEWS_PATH <- "app/views/"
 views <- list.files(path = VIEWS_PATH, pattern = "_ui.R$", recursive = TRUE)
@@ -34,6 +35,7 @@ shinyUI(
       tags$head(
         tags$link(rel = "stylesheet", type = "text/css", href = "table.css")
       ),
+      useShinyjs(),
       tabItems(
         tabItem(tabName = "home", "Test"),
         tabItem(tabName = "data", .data_ui),
