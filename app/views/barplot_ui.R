@@ -7,22 +7,26 @@ require(plotly)
         "1. Básico",
         selectInput("mainVariable", "Columna a graficar", vector()),
         radioButtons("mainVariableType", "Tipo de dato", choices = c("Cualitativo", "Cuantitativo"), selected = "Cualitativo"),
-        textInput("bins", "Número de barras", value = "8", placeholder = "N° de barras para el histograma")
+        textInput("bins", "Número de barras", value = "8", placeholder = "N° de barras para el histograma"),
+        icon = icon("chart-bar")
       ),
       tabPanel(
         "2. Facetas",
         selectInput("secondVariable", "Columna de faceta horizontal", vector()),
-        selectInput("thirdVariable", "Columna de faceta vertical", vector())
+        selectInput("thirdVariable", "Columna de faceta vertical", vector()),
+        icon = icon("columns")
       ),
       tabPanel(
         "3. Color",
-        selectInput("fourthVariable", "Columna de rellenado de color", vector())
+        selectInput("fourthVariable", "Columna de rellenado de color", vector()),
+        icon = icon("palette")
       ),
       tabPanel(
         "Otros",
         selectInput("filterVariable", "Columna de filtrado", vector()),
         textInput("filterValue", "Valor de filtrado"),
-        selectInput("barColor", "Paleta de color", choices = c("Magma" = "A", "Inferno" = "B", "Plasma" = "C", "Viridis" = "D", "Cividis" = "E"))
+        selectInput("barColor", "Paleta de color", choices = c("Magma" = "A", "Inferno" = "B", "Plasma" = "C", "Viridis" = "D", "Cividis" = "E")),
+        icon = icon("cog")
       ),
       tags$p(
         tags$strong("Consejo: "), 

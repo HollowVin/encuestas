@@ -33,6 +33,8 @@ graph_controller <- function(input, output, session) {
   emptyColumn <- "__(N/A)__"
   
   observeEvent(values$data, {
+    output$columnCount <- renderValueBox( {valueBox(ncol(values$data), "Columnas", width = 1, icon = icon("columns"))} )
+    output$rowCount <- renderValueBox( {valueBox(nrow(values$data), "Filas", width = 1, color = "yellow", icon = icon("th-list", lib = "glyphicon"))} )
     updateSelectizeInput(session, "mainVariable", choices = names(values$data))
     updateSelectizeInput(session, "secondVariable", choices = c(emptyColumn, names(values$data)))
     updateSelectizeInput(session, "thirdVariable", choices = c(emptyColumn, names(values$data)))

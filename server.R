@@ -18,5 +18,6 @@ for (controller in controllers) {
 }
 
 shinyServer(function(input, output, session) {
+  home_controller(input, output, session)
   graph_controller(input, output, session)
 })

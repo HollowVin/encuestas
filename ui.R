@@ -24,6 +24,7 @@ shinyUI(
     dashboardHeader(title = "Analizador de Datos de Encuestas"),
     dashboardSidebar(
       sidebarMenu(
+        id = "tabs",
         menuItem("Inicio", tabName = "home", icon = icon("home")),
         menuItem("Datos", tabName = "data", icon = icon("database")),
         menuItem("Gráfico Barras", tabName = "bars", icon = icon("chart-bar")),
@@ -34,11 +35,11 @@ shinyUI(
     ),
     dashboardBody(
       tags$head(
-        tags$link(rel = "stylesheet", type = "text/css", href = "table.css")
+        tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css")
       ),
       useShinyjs(),
       tabItems(
-        tabItem(tabName = "home", "Test"),
+        tabItem(tabName = "home", .home_ui),
         tabItem(tabName = "data", .data_ui),
         tabItem(tabName = "bars", .barplot_ui),
         tabItem(tabName = "mosaic", .mosaic_plot_ui),
