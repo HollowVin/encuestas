@@ -8,9 +8,6 @@
 #
 
 library(shiny)
-library(readxl)
-library(readr)
-library(shinyFeedback)
 source("services/graph.R")
 
 CONTROLLERS_PATH <- "app/controllers/"
