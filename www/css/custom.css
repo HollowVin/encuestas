@@ -1,4 +1,4 @@
-#homePage {
+#homePage, #aboutProjectPage {
   text-align: center;
 }
 
@@ -17,6 +17,10 @@
 
 #aboutLinks {
   margin-top: 5px;
+}
+
+#udaLogo {
+  text-align: center;  
 }
 
 .btn-primary, .btn-warning {

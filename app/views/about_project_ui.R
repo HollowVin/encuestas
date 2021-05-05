@@ -1,4 +1,5 @@
 .about_project_ui <- fluidPage(
+  id = "aboutProjectPage",
   h2("Proyecto de titulación"),
   tags$p(
     tags$strong("Autor: "),
@@ -18,6 +19,6 @@
      carrera de Ingeniería de Sistemas y Telemática en la Universidad del Azuay."
   ),
   tags$img(
-    href = "", alt = "placeholder UDA"
-  ),
+    src = "assets/uda.jpg", alt = "placeholder UDA", width = "300px"
+  )
 )

@@ -5,7 +5,7 @@
     tags$p("Use su propio archivo de datos Excel o CSV para generar gráficos 
            estadísticos y generar información de forma ágil, sencilla e 
            intuitiva"),
-    tags$img(src = "assets/example.png", alt = "Example Graph", width = 450, id = "exampleImg")
+    tags$img(src = "assets/example.png", alt = "Example Graph", width = 380, id = "exampleImg")
   ),
   fluidRow(
     actionButton("dataButton", "Subir Datos", class = "btn-primary"),
