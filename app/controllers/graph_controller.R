@@ -44,7 +44,7 @@ graph_controller <- function(input, output, session) {
     updateSelectizeInput(session, "mosaicSecondVariable", choices = names(values$data))
   })
   
-  output$barPlot <- renderPlotly({
+  output$barPlot <- renderPlot({
     x <- values$data
     qualitative <- input$mainVariableType == "Cualitativo"
     if (!qualitative) {

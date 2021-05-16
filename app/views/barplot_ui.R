@@ -41,7 +41,7 @@ require(plotly)
   ),
 
   box(
-    plotlyOutput("barPlot", height = "100vh"),
+    plotOutput("barPlot", height = "100vh"),
     width = 8
   )
 )
