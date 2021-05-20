@@ -2,10 +2,6 @@
   id = "aboutProjectPage",
   h2("Proyecto de titulación"),
   tags$p(
-    tags$strong("Autor: "),
-    tags$span("Ana Corral"),
-  ),
-  tags$p(
     tags$strong("Directora de tesis: "),
     tags$span("Agrim. Daniela Elisabet Ballari")
   ),
