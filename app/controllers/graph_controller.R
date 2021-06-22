@@ -29,6 +29,7 @@ graph_controller <- function(input, output, session) {
   })
   
   observeEvent(input$filterVariable, {
+    toggleState("filterValue", condition = input$filterVariable != "__(N/A)__")
     if (input$filterVariable == "__(N/A)__") {
       updateSelectizeInput(session, "filterValue", choices = vector())
     } else {
