@@ -28,6 +28,14 @@ graph_controller <- function(input, output, session) {
     toggleState("bins", condition = input$mainVariableType == "Cuantitativo")
   })
   
+  observeEvent(input$filterVariable, {
+    if (input$filterVariable == "__(N/A)__") {
+      updateSelectizeInput(session, "filterValue", choices = vector())
+    } else {
+      updateSelectizeInput(session, "filterValue", choices = values$data[[input$filterVariable]])
+    }
+  })
+  
   output$tableData <- renderDataTable({values$data})
   
   emptyColumn <- "__(N/A)__"

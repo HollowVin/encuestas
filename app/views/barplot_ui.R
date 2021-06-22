@@ -1,6 +1,13 @@
 require(plotly)
 
 .barplot_ui <- fluidRow(
+  tags$p(
+    tags$strong("Consejo: "), 
+    tags$span("Para graficar más de una variable, asegúrese 
+                  de seleccionar cada variable siguiendo el
+                  orden de las pestañas numeradas."),
+    style = "color: gray; margin-left: 20px"
+  ),
   box(
     tabBox(
       tabPanel(
@@ -24,15 +31,16 @@ require(plotly)
       tabPanel(
         "Otros",
         selectInput("filterVariable", "Columna de filtrado", vector()),
-        textInput("filterValue", "Valor de filtrado"),
+        selectInput("filterValue", "Valor de filtrado", vector()),
         selectInput("barColor", "Paleta de color", choices = c("Magma" = "A", "Inferno" = "B", "Plasma" = "C", "Viridis" = "D", "Cividis" = "E")),
         icon = icon("cog")
       ),
       tags$p(
         tags$strong("Consejo: "), 
-        tags$span("Para graficar más de una variable, asegúrese 
-                  de seleccionar cada variable siguiendo el
-                  orden de las pestañas numeradas."),
+        tags$span("Puede guardar un gráfico generado en cualquier 
+              momento si hace click con el botón derecho del ratón
+              sobre el gráfico y elige la opción para guardar la 
+              imagen de su navegador."),
         style = "color: gray"
       ),
       width = 12
