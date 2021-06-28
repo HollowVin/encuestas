@@ -30,7 +30,8 @@ shinyUI(
         menuItem("Gráfico Barras", tabName = "bars", icon = icon("chart-bar")),
         menuItem("Gráfico Mosaico", tabName = "mosaic", icon = icon("table")),
         menuItem("Acerca del proyecto", tabName = "project", icon = icon("book")),
-        menuItem("Acerca De CEPRA-RES", tabName = "cepra", icon = icon("id-card"))
+        menuItem("Acerca De CEPRA-RES", tabName = "cepra", icon = icon("id-card")),
+        menuItem("Preguntas Frecuentes", tabName = "faq", icon = icon("question-circle"))
       )
     ),
     dashboardBody(
@@ -44,7 +45,8 @@ shinyUI(
         tabItem(tabName = "bars", .barplot_ui),
         tabItem(tabName = "mosaic", .mosaic_plot_ui),
         tabItem(tabName = "project", .about_project_ui),
-        tabItem(tabName = "cepra", .about_cepra_ui)
+        tabItem(tabName = "cepra", .about_cepra_ui),
+        tabItem(tabName = "faq", .faq_ui)
       )
     )
   )

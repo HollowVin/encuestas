@@ -12,20 +12,20 @@ require(plotly)
     tabBox(
       tabPanel(
         "1. Básico",
-        selectInput("mainVariable", "Columna a graficar", vector()),
+        selectInput("mainVariable", "Columna a graficar (variable principal)", vector()),
         radioButtons("mainVariableType", "Tipo de dato", choices = c("Cualitativo", "Cuantitativo"), selected = "Cualitativo"),
         textInput("bins", "Número de barras", value = "8", placeholder = "N° de barras para el histograma"),
         icon = icon("chart-bar")
       ),
       tabPanel(
         "2. Facetas",
-        selectInput("secondVariable", "Columna de faceta horizontal", vector()),
-        selectInput("thirdVariable", "Columna de faceta vertical", vector()),
+        selectInput("secondVariable", "Columna de faceta horizontal (segunda variable)", vector()),
+        selectInput("thirdVariable", "Columna de faceta vertical (tercera variable)", vector()),
         icon = icon("columns")
       ),
       tabPanel(
         "3. Color",
-        selectInput("fourthVariable", "Columna de rellenado de color", vector()),
+        selectInput("fourthVariable", "Columna de rellenado de color (cuarta variable)", vector()),
         icon = icon("palette")
       ),
       tabPanel(
